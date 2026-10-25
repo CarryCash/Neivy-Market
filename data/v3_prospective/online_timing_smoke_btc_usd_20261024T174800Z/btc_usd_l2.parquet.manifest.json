@@ -1,0 +1,77 @@
+{
+  "project": "NAVIER",
+  "version": "001.11",
+  "capture_schema_version": 3,
+  "status": "SUCCESS",
+  "exchange": "Kraken Spot WebSocket API v2",
+  "endpoint": "wss://ws.kraken.com/v2",
+  "channel": "book",
+  "symbol": "BTC/USD",
+  "depth": 10,
+  "mode": "public_market_data_only_no_orders",
+  "started_at_utc": "2026-10-24T17:47:26.760474+00:00",
+  "ended_at_utc": "2026-10-24T17:49:33.153847+00:00",
+  "elapsed_seconds": 126.406,
+  "requested_capture_seconds": 120.0,
+  "collection_elapsed_seconds": 126.406,
+  "valid_rows_written": 3945,
+  "capture_complete": true,
+  "adapter_counters": {
+    "messages": 4045,
+    "snapshots": 1,
+    "valid_updates": 3944,
+    "checksum_failures": 0,
+    "malformed_messages": 0,
+    "ignored_messages": 100,
+    "reconnects": 0,
+    "exchange_timestamp_ties": 755,
+    "out_of_order_timestamps": 0,
+    "connection_errors": 0,
+    "subscription_errors": 0
+  },
+  "final_book_status": "VALID",
+  "adapter_last_connection_error": null,
+  "error": null,
+  "checksum": "CRC32: top 10 asks ascending then top 10 bids descending",
+  "feature_output_file": "btc_usd_l2_features_v3_online.parquet",
+  "feature_output_sha256": "7b9f5844d4b815250ccd1a144313f7f06cc57b819c2f0fa550241876b39bb20e",
+  "online_feature_counters": {
+    "intervals_finalized": 98,
+    "feature_rows_published": 39,
+    "warmup_or_na_rows_not_published": 59,
+    "gap_rows_not_published": 0
+  },
+  "clock": {
+    "capture_and_features_same_process": true,
+    "perf_counter": {
+      "implementation": "QueryPerformanceCounter()",
+      "resolution": 1e-07,
+      "monotonic": true,
+      "adjustable": false
+    },
+    "perf_counter_empirical": {
+      "successive_call_differences": 100000,
+      "zero_count": 3269,
+      "min_positive_ns": 100,
+      "median_positive_ns": 100,
+      "max_ns": 170200
+    },
+    "perf_counter_nanoseconds": "frame receipt, candidate state processed/CRC validated, feature compute and synchronous in-process feature sink; comparable within this process/session"
+  },
+  "timestamp_fields": {
+    "timestamp": "exchange RFC3339 event time, UTC",
+    "received_at": "local UTC wall clock sampled immediately after websocket frame receipt",
+    "received_monotonic_ns": "local monotonic nanoseconds sampled at frame receipt; session-local",
+    "processed_at": "local UTC wall clock after parse, book update, and checksum validation",
+    "processed_monotonic_ns": "local monotonic nanoseconds after validation; session-local",
+    "frame_received_monotonic_ns": "time.perf_counter_ns at WebSocket frame receipt",
+    "state_processed_monotonic_ns": "time.perf_counter_ns after candidate L2 update and shape validation, before CRC check",
+    "state_validated_monotonic_ns": "time.perf_counter_ns after successful CRC and state commit; absent on invalid messages",
+    "state_selection_started_monotonic_ns": "time.perf_counter_ns before the causal resampler selects the interval state",
+    "state_selected_monotonic_ns": "time.perf_counter_ns after causal resampling has selected interval states",
+    "feature_compute_started_monotonic_ns": "time.perf_counter_ns immediately before frozen V3 batch function on current causal resample",
+    "feature_ready_monotonic_ns": "time.perf_counter_ns immediately before synchronous in-process feature sink receives a valid V3 row; sidecar is persisted at capture finalization"
+  },
+  "output_file": "btc_usd_l2.parquet",
+  "output_sha256": "620eb78d643530b96593ad7a6b0c9823d4239b6ec8d69823401dddde86c5c8c0"
+}

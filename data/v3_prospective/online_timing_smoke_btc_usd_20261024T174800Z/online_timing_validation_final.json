@@ -1,0 +1,186 @@
+{
+  "status": "PASS_ONLINE_TIMING_SMOKE",
+  "checks": {
+    "manifest_success": true,
+    "instrument_channel_depth": true,
+    "raw_sha_matches_manifest": true,
+    "feature_sha_matches_manifest": true,
+    "schema_v3": true,
+    "row_count_matches": true,
+    "capture_ids_unique_consecutive": true,
+    "exchange_event_time_monotonic": true,
+    "perf_clock_ordered": true,
+    "perf_clock_row_order_monotonic": true,
+    "no_integrity_transport_failures": true,
+    "feature_ids_unique_consecutive": true,
+    "feature_source_ids_exist": true,
+    "feature_trigger_ids_exist": true,
+    "feature_timing_ordered": true,
+    "feature_source_is_not_future": true,
+    "feature_dependency_rows_are_causal": true,
+    "feature_source_row_matches_resampler": true,
+    "feature_trigger_precedes_compute": true,
+    "batch_online_equivalent": true,
+    "all_durations_nonnegative": true,
+    "frame_receipt_span_within_120s": true
+  },
+  "capture_sha256": "620eb78d643530b96593ad7a6b0c9823d4239b6ec8d69823401dddde86c5c8c0",
+  "feature_sha256": "7b9f5844d4b815250ccd1a144313f7f06cc57b819c2f0fa550241876b39bb20e",
+  "raw_rows": 3945,
+  "feature_rows": 39,
+  "frame_receipt_span_seconds_perf_counter": 117.4089681,
+  "requested_duration_seconds": 120.0,
+  "manifest_elapsed_seconds_including_finalization": 126.406,
+  "online_feature_counters": {
+    "intervals_finalized": 98,
+    "feature_rows_published": 39,
+    "warmup_or_na_rows_not_published": 59,
+    "gap_rows_not_published": 0
+  },
+  "adapter_counters": {
+    "messages": 4045,
+    "snapshots": 1,
+    "valid_updates": 3944,
+    "checksum_failures": 0,
+    "malformed_messages": 0,
+    "ignored_messages": 100,
+    "reconnects": 0,
+    "exchange_timestamp_ties": 755,
+    "out_of_order_timestamps": 0,
+    "connection_errors": 0,
+    "subscription_errors": 0
+  },
+  "clock": {
+    "capture_and_features_same_process": true,
+    "perf_counter": {
+      "implementation": "QueryPerformanceCounter()",
+      "resolution": 1e-07,
+      "monotonic": true,
+      "adjustable": false
+    },
+    "perf_counter_empirical": {
+      "successive_call_differences": 100000,
+      "zero_count": 3269,
+      "min_positive_ns": 100,
+      "median_positive_ns": 100,
+      "max_ns": 170200
+    },
+    "perf_counter_nanoseconds": "frame receipt, candidate state processed/CRC validated, feature compute and synchronous in-process feature sink; comparable within this process/session"
+  },
+  "timings": {
+    "frame_received_to_candidate_processed": {
+      "count": 3945,
+      "zero_count": 0,
+      "zero_percent": 0.0,
+      "min_ms": 0.0287,
+      "median_ms": 0.0408,
+      "p90_ms": 0.06871999999999998,
+      "p95_ms": 0.1025599999999998,
+      "p99_ms": 0.12680399999999994,
+      "max_ms": 0.2308
+    },
+    "frame_received_to_state_validated": {
+      "count": 3945,
+      "zero_count": 0,
+      "zero_percent": 0.0,
+      "min_ms": 0.0659,
+      "median_ms": 0.0794,
+      "p90_ms": 0.13326,
+      "p95_ms": 0.16518,
+      "p99_ms": 0.19864799999999996,
+      "max_ms": 0.3409
+    },
+    "source_frame_received_to_feature_ready": {
+      "count": 39,
+      "zero_count": 0,
+      "zero_percent": 0.0,
+      "min_ms": 72.361,
+      "median_ms": 77.296,
+      "p90_ms": 89.04518000000003,
+      "p95_ms": 97.87060000000001,
+      "p99_ms": 98.92203599999999,
+      "max_ms": 99.5444
+    },
+    "trigger_frame_received_to_state_selection_started": {
+      "count": 39,
+      "zero_count": 0,
+      "zero_percent": 0.0,
+      "min_ms": 0.6851,
+      "median_ms": 0.7099,
+      "p90_ms": 0.8505800000000001,
+      "p95_ms": 0.9301600000000003,
+      "p99_ms": 1.167014,
+      "max_ms": 1.1745
+    },
+    "state_selection_duration": {
+      "count": 39,
+      "zero_count": 0,
+      "zero_percent": 0.0,
+      "min_ms": 51.5859,
+      "median_ms": 56.2516,
+      "p90_ms": 60.57316,
+      "p95_ms": 61.82048000000001,
+      "p99_ms": 70.98485599999998,
+      "max_ms": 74.0738
+    },
+    "state_selected_to_feature_compute_started": {
+      "count": 39,
+      "zero_count": 0,
+      "zero_percent": 0.0,
+      "min_ms": 0.472,
+      "median_ms": 0.5403,
+      "p90_ms": 0.60488,
+      "p95_ms": 0.62934,
+      "p99_ms": 0.7949979999999993,
+      "max_ms": 0.893
+    },
+    "trigger_frame_received_to_feature_compute": {
+      "count": 39,
+      "zero_count": 0,
+      "zero_percent": 0.0,
+      "min_ms": 52.7581,
+      "median_ms": 57.6311,
+      "p90_ms": 61.9247,
+      "p95_ms": 63.18657000000001,
+      "p99_ms": 72.59309999999998,
+      "max_ms": 75.8079
+    },
+    "trigger_frame_received_to_feature_ready": {
+      "count": 39,
+      "zero_count": 0,
+      "zero_percent": 0.0,
+      "min_ms": 71.4893,
+      "median_ms": 76.4742,
+      "p90_ms": 88.15812000000003,
+      "p95_ms": 96.86617000000001,
+      "p99_ms": 97.943562,
+      "max_ms": 98.5307
+    },
+    "feature_compute_to_ready": {
+      "count": 39,
+      "zero_count": 0,
+      "zero_percent": 0.0,
+      "min_ms": 18.2475,
+      "median_ms": 19.0186,
+      "p90_ms": 21.306400000000004,
+      "p95_ms": 37.55113,
+      "p99_ms": 40.262035999999995,
+      "max_ms": 40.8996
+    }
+  },
+  "max_absolute_feature_difference": {
+    "v03_pnpc_k3": 0.0,
+    "v03_pnpc_k5": 0.0,
+    "v03_liq_conc_ask": 0.0,
+    "v03_liq_conc_bid": 0.0,
+    "v03_impact_conc_k3": 0.0,
+    "v03_depth_replenish_ask": 4.440892098500626e-16,
+    "v03_depth_replenish_bid": 2.220446049250313e-16
+  },
+  "distinct_feature_trigger_rows": 36,
+  "limitations": [
+    "Kraken feed has no sequence number; CRC and transport counters cannot prove zero silent loss.",
+    "feature_ready is the in-process synchronous sink handoff; Parquet sidecar is persisted at session end.",
+    "No predictive or economic performance was evaluated."
+  ]
+}

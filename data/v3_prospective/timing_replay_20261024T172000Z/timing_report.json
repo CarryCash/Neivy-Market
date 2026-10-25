@@ -1,0 +1,141 @@
+{
+  "status": "PARTIAL_TIMING_DIAGNOSTIC",
+  "source": "data\\v3_prospective\\smoke_btc_usd_20261024T171200Z\\btc_usd_l2.parquet",
+  "source_sha256_before": "b6123f33a464751fdceeca1a5f78887bc28f2d74e3ab4205cb94b6c1ddb80b76",
+  "source_sha256_after": "b6123f33a464751fdceeca1a5f78887bc28f2d74e3ab4205cb94b6c1ddb80b76",
+  "rows_in": 3884,
+  "rows_resampled": 109,
+  "resampled_state_counts": {
+    "OBSERVED": 107,
+    "CARRIED_FORWARD": 2
+  },
+  "valid_v3_rows": 50,
+  "v3_columns": [
+    "v03_pnpc_k3",
+    "v03_pnpc_k5",
+    "v03_liq_conc_ask",
+    "v03_liq_conc_bid",
+    "v03_impact_conc_k3",
+    "v03_depth_replenish_ask",
+    "v03_depth_replenish_bid"
+  ],
+  "config": {
+    "horizon": 10,
+    "vol_window": 60,
+    "ofi_window": 5
+  },
+  "clock_info": {
+    "monotonic": {
+      "implementation": "GetTickCount64()",
+      "resolution": 0.015625,
+      "monotonic": true,
+      "adjustable": false
+    },
+    "perf_counter": {
+      "implementation": "QueryPerformanceCounter()",
+      "resolution": 1e-07,
+      "monotonic": true,
+      "adjustable": false
+    },
+    "time": {
+      "implementation": "GetSystemTimeAsFileTime()",
+      "resolution": 0.015625,
+      "monotonic": false,
+      "adjustable": true
+    }
+  },
+  "perf_counter_empirical": {
+    "samples": 100000,
+    "zero_count": 31183,
+    "min_positive_ns": 100,
+    "median_positive_ns": 100,
+    "max_ns": 76100
+  },
+  "capture_receive_to_process_monotonic_ns": {
+    "count": 3884,
+    "zero_count": 3862,
+    "zero_percent": 99.4335736354274,
+    "min_ms": 0.0,
+    "median_ms": 0.0,
+    "p90_ms": 0.0,
+    "p95_ms": 0.0,
+    "p99_ms": 0.0,
+    "max_ms": 16.0
+  },
+  "replay_stages": {
+    "parquet_read": {
+      "count": 1,
+      "zero_count": 0,
+      "zero_percent": 0.0,
+      "min_ms": 82.2285,
+      "median_ms": 82.2285,
+      "p90_ms": 82.2285,
+      "p95_ms": 82.2285,
+      "p99_ms": 82.2285,
+      "max_ms": 82.2285
+    },
+    "input_validation": {
+      "count": 1,
+      "zero_count": 0,
+      "zero_percent": 0.0,
+      "min_ms": 10.1544,
+      "median_ms": 10.1544,
+      "p90_ms": 10.1544,
+      "p95_ms": 10.1544,
+      "p99_ms": 10.1544,
+      "max_ms": 10.1544
+    },
+    "book_resampling": {
+      "count": 1,
+      "zero_count": 0,
+      "zero_percent": 0.0,
+      "min_ms": 31.0684,
+      "median_ms": 31.0684,
+      "p90_ms": 31.0684,
+      "p95_ms": 31.0684,
+      "p99_ms": 31.0684,
+      "max_ms": 31.0684
+    },
+    "v3_feature_batch": {
+      "count": 1,
+      "zero_count": 0,
+      "zero_percent": 0.0,
+      "min_ms": 22.1479,
+      "median_ms": 22.1479,
+      "p90_ms": 22.1479,
+      "p95_ms": 22.1479,
+      "p99_ms": 22.1479,
+      "max_ms": 22.1479
+    },
+    "end_to_end": {
+      "count": 1,
+      "zero_count": 0,
+      "zero_percent": 0.0,
+      "min_ms": 145.5992,
+      "median_ms": 145.5992,
+      "p90_ms": 145.5992,
+      "p95_ms": 145.5992,
+      "p99_ms": 145.5992,
+      "max_ms": 145.5992
+    }
+  },
+  "feature_availability": {
+    "ready_semantics": "all V3 feature columns are non-null after batch compute returns",
+    "source_link": "capture_row_id of the 1s resampled state; same row's features use only current/past resampled rows",
+    "capture_to_feature_ready_latency_measured": false,
+    "reason": "Capture has no high-resolution perf_counter mark at receipt and the existing feature pipeline is batch, not online.",
+    "valid_v3_rows": 50
+  },
+  "cross_clock_policy": "No subtraction between exchange UTC, local wall UTC, monotonic_ns and perf_counter_ns.",
+  "outputs": [
+    "resampled_l2_1s.parquet",
+    "features_v3.parquet",
+    "feature_availability_replay.csv"
+  ],
+  "limitations": [
+    "Replay duration is local offline compute cost, not production feature latency.",
+    "Historical monotonic marks use the coarse GetTickCount64 clock and cannot resolve most sub-15.625 ms delays.",
+    "There is no measured per-row online feature-ready time or capture-to-feature latency.",
+    "The 110-second smoke does not provide the full independent validation sample or predictive evidence."
+  ]
+}

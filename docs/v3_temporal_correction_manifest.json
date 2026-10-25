@@ -1,0 +1,59 @@
+{
+  "project": "NAVIER",
+  "version": "v3-temporal-correction-1",
+  "status": "post-hoc diagnostic; not confirmatory",
+  "files": [
+    {
+      "path": "NAVIER_V3_PROTOCOL.md",
+      "sha256": "0183b474253d5b6f50f25aba7e463a925a4ff5183da99a3648736dd93095114a"
+    },
+    {
+      "path": "docs/v3_freeze_manifest.md",
+      "sha256": "9ebc5bc68cb802182d7b8190e0982783767774c612530121f0a14604f01e94c8"
+    },
+    {
+      "path": "docs/v3_temporal_correction_addendum.md",
+      "sha256": "fb4bcec52392be5341b33f1667297424499f74d5a434a1083b191274921e2bf6"
+    },
+    {
+      "path": "navier_lab/analysis.py",
+      "sha256": "3ff3e6ab41aeb2fce9d34b3d1e49e2b71de03ae4892bcc64773c1af55cc3ce9a"
+    },
+    {
+      "path": "navier_lab/features.py",
+      "sha256": "1b642ebfe827e9348f8ded67f9e5f706d0f6599074156094fb73131a2fa853db"
+    },
+    {
+      "path": "navier_lab/schema.py",
+      "sha256": "a34cec8a9d57b3bdcf8c5b7e803452b33e288b238cba2f398c66f0fa8cf80e1a"
+    },
+    {
+      "path": "scripts/build_research_dataset_v3.py",
+      "sha256": "be58dbb3d8d7e22245dfb99897befeafb059742d6cfb37d47f5cde94a090d6ca"
+    },
+    {
+      "path": "scripts/evaluate_models_oos_v3.py",
+      "sha256": "2712a91f221d9987d523ac36c527e9d28f0139869344b991ba81e1f22f64324c"
+    },
+    {
+      "path": "scripts/evaluate_models_oos_v3_temporal.py",
+      "sha256": "e91697b9e85270d58b53ee6bb03be1a0c271f0b91dce2394a8a287f12c616d2a"
+    },
+    {
+      "path": "scripts/run_phase5_evaluation.py",
+      "sha256": "bd969d320723a090f99c33ce343ef213596ada4afa8bbc493d5f4f04e34171ac"
+    },
+    {
+      "path": "scripts/run_phase5_evaluation_purged.py",
+      "sha256": "3d3326e7fa54c3864e729876e46ccc987a53dd420c18d8e4119ede35c78d3146"
+    },
+    {
+      "path": "tests/test_evaluate_models_oos_v3.py",
+      "sha256": "0708e7d0812b51b1496e1e78d9522b8b9c16c3832618ae11407c9289a41db2cd"
+    },
+    {
+      "path": "tests/test_features_v3.py",
+      "sha256": "2c2d93136b99102d56fec49589010b7dd806a6ff99f4298dbc29692f6a3ed8f2"
+    }
+  ]
+}

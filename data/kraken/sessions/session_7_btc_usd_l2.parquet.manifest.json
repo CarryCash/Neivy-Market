@@ -1,0 +1,28 @@
+{
+  "project": "NAVIER",
+  "version": "001.8",
+  "exchange": "Kraken Spot WebSocket API v2",
+  "endpoint": "wss://ws.kraken.com/v2",
+  "channel": "book",
+  "symbol": "BTC/USD",
+  "depth": 10,
+  "mode": "public_market_data_only_no_orders",
+  "started_at_utc": "2026-10-20T18:20:31.041739+00:00",
+  "ended_at_utc": "2026-10-20T18:35:36.385312+00:00",
+  "elapsed_seconds": 905.344,
+  "valid_rows_written": 44883,
+  "output_file": "session_7_btc_usd_l2.parquet",
+  "output_sha256": "c2bcbfd93bb5641994dd7f970efff13939d9915cc47faa9cd063027c9bbbc034",
+  "adapter_counters": {
+    "messages": 45782,
+    "snapshots": 1,
+    "valid_updates": 44882,
+    "checksum_failures": 0,
+    "malformed_messages": 0,
+    "ignored_messages": 899,
+    "reconnects": 0
+  },
+  "final_book_status": "VALID",
+  "error": null,
+  "checksum": "CRC32: top 10 asks ascending then top 10 bids descending"
+}

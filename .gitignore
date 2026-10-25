@@ -1,0 +1,35 @@
+# Python bytecode and test/type-check caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.pytest-*/
+pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter-generated state
+.ipynb_checkpoints/
+
+# Test-run artifacts stored under scratch
+scratch/pytest_*/
+
+# Local credentials and machine-specific settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+
+# Incomplete or temporary capture outputs
+*.partial
+*.incomplete.json
+*.tmp

@@ -1,0 +1,47 @@
+{
+  "status": "FAILED",
+  "evidence_status": "POST_HOC_DIAGNOSTIC_NOT_CONFIRMATORY",
+  "execution_start_utc": "2026-10-24 16:17:54 UTC",
+  "platform": {
+    "system": "Windows",
+    "release": "10",
+    "machine": "AMD64",
+    "python_version": "3.10.9 (tags/v3.10.9:1dd9be6, Dec  6 2022, 20:01:21) [MSC v.1934 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python310\\python.exe"
+  },
+  "dependency_versions": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.2",
+    "scipy": "1.15.3"
+  },
+  "command_line": [
+    "scripts/run_phase5_evaluation.py",
+    "--dataset",
+    "data/research_dataset_v3_temporal_purged.parquet",
+    "--dataset-manifest",
+    "data/research_dataset_v3_temporal_purged.manifest.json",
+    "--results-dir",
+    "results/phase5_v3_purged",
+    "--n-boot",
+    "1000"
+  ],
+  "parameters": {
+    "holdout_ratio": 0.2,
+    "k_folds": 5,
+    "purge_rule": "label_end_time < nominal test_start_time",
+    "embargo_seconds": 10,
+    "seed": 42,
+    "n_boot": 1000,
+    "bootstrap_block_seconds": [
+      10,
+      15,
+      30
+    ],
+    "fdr_family": "C1-C4; primary block length 15s",
+    "futility_delta_min": 0.001
+  },
+  "error_message": "Extra data: line 59 column 2 (char 2011)",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\USER\\Documents\\ChatGPT\\Navier Stokes Trading\\scripts\\run_phase5_evaluation_purged.py\", line 136, in run_phase5_evaluation\n    metadata[\"correction_code_verification\"] = verify_correction_manifest(correction_manifest)\n  File \"C:\\Users\\USER\\Documents\\ChatGPT\\Navier Stokes Trading\\scripts\\run_phase5_evaluation_purged.py\", line 37, in verify_correction_manifest\n    data = json.loads(manifest_path.read_text(encoding=\"utf-8\"))\n  File \"C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python310\\lib\\json\\__init__.py\", line 346, in loads\n    return _default_decoder.decode(s)\n  File \"C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python310\\lib\\json\\decoder.py\", line 340, in decode\n    raise JSONDecodeError(\"Extra data\", s, end)\njson.decoder.JSONDecodeError: Extra data: line 59 column 2 (char 2011)\n",
+  "execution_end_utc": "2026-10-24 16:17:54 UTC",
+  "total_duration_seconds": 0.047
+}

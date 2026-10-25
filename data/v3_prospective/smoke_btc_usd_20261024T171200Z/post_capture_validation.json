@@ -1,0 +1,97 @@
+{
+  "status": "PASS_SMOKE_ONLY",
+  "checks": {
+    "manifest_success_and_rows_positive": true,
+    "requested_instrument_feed_endpoint": true,
+    "row_symbols_all_btc_usd": true,
+    "schema_v2_and_required_columns": true,
+    "row_count_matches": true,
+    "row_id_consecutive_unique": true,
+    "temporal_fields_nonnull_utc": true,
+    "monotonic_fields_nondecreasing": true,
+    "processing_not_before_receipt": true,
+    "exchange_monotonic_and_ties_match": true,
+    "book_shape_valid_and_checksums_present": true,
+    "no_checksum_or_transport_errors": true,
+    "sha_matches_manifest_and_driver": true,
+    "no_partials": true,
+    "effective_stream_under_120s": true,
+    "driver_exit_zero": true
+  },
+  "all_checks_pass": true,
+  "rows": 3884,
+  "capture_started_utc": "2026-10-24T17:17:33.435777+00:00",
+  "capture_ended_utc": "2026-10-24T17:19:23.823223+00:00",
+  "requested_stream_seconds": 110.0,
+  "observed_collection_elapsed_seconds": 110.375,
+  "driver_wall_seconds": 111.375,
+  "symbol": "BTC/USD",
+  "endpoint": "wss://ws.kraken.com/v2",
+  "channel": "book",
+  "depth": 10,
+  "adapter_counters": {
+    "messages": 3995,
+    "snapshots": 1,
+    "valid_updates": 3883,
+    "checksum_failures": 0,
+    "malformed_messages": 0,
+    "ignored_messages": 111,
+    "reconnects": 0,
+    "exchange_timestamp_ties": 278,
+    "out_of_order_timestamps": 0,
+    "connection_errors": 0,
+    "subscription_errors": 0
+  },
+  "final_book_status": "VALID",
+  "exchange_timestamp_ties": 278,
+  "exchange_timestamp_regressions": 0,
+  "exchange_time_gaps_gt_3s": 0,
+  "max_exchange_time_gap_seconds": 2.76028,
+  "processing_delay_monotonic_clock_ms": {
+    "percentiles": {
+      "50": 0.0,
+      "90": 0.0,
+      "95": 0.0,
+      "99": 0.0,
+      "100": 16.0
+    },
+    "zero_count": 3862,
+    "clock_resolution_seconds": 0.015625,
+    "interpretation": "No fiable para latencias sub-15.625 ms; el reloj del sistema cuantiza en 15.625 ms."
+  },
+  "processing_delay_local_wall_clock_ms": {
+    "percentiles": {
+      "50": 0.0,
+      "90": 0.0,
+      "95": 0.0,
+      "99": 4.140560000000004,
+      "100": 10.047
+    },
+    "negative_count": 0,
+    "interpretation": "Sólo observacional; no es latencia certificada debido a posible ajuste/offset de reloj local."
+  },
+  "receive_minus_exchange_wall_clock_ms": {
+    "p50": 1458.504,
+    "p95": 4361.0022,
+    "interpretation": "No usar como latencia: no se verificó sincronización/offset NTP."
+  },
+  "parquet_sha256": "b6123f33a464751fdceeca1a5f78887bc28f2d74e3ab4205cb94b6c1ddb80b76",
+  "manifest_sha256": "618e5518e5808968c6f0fed02b74953ecbe0ef8d0c696385bea4c2a9a3fdcaec",
+  "stdout_sha256": "c540171f04f9efe47c1e0b0ec9b0236ac5d3fb888f99cc0a5336c5150dc5baac",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "driver_metadata_sha256": "d53924d865c89c6a01d8e1a7cbf999ec0fccd84a94f0a7334b522d4f7cc4670d",
+  "source_sha256": {
+    "NAVIER_V3_PROTOCOL.md": "0183b474253d5b6f50f25aba7e463a925a4ff5183da99a3648736dd93095114a",
+    "scripts/capture_kraken_l2.py": "90430195df188eec66dc322dba10cb86ec033d2c46ccace58e3b1d31637e35a0",
+    "navier_lab/kraken_ws_v2.py": "daa5f79f86cd7a6450d5602135ee200ad150c34eef1d8fc8f2e38afba9dd4671",
+    "navier_lab/resampler.py": "cfff12db50bea523de96d6f047cf29ff5e4b470d375b7f6dc80be5390709a475",
+    "smoke_driver": "047d8924ec32a0278f9360641ccd690c0c982089ab576581abd0514c959ce557"
+  },
+  "limitations": [
+    "Una captura de ~110 s no demuestra rendimiento sostenido ni ausencia de pérdidas.",
+    "El feed no proporciona sequence ID; CRC valida el estado transmitido pero no reconstruye un contador de secuencias perdidas.",
+    "El reloj monotónico del host tiene resolución efectiva observada de 15.625 ms; percentiles de demora sub-ms no son estimables con estos campos.",
+    "No se verificó NTP ni latencia desde cálculo de las features hasta decisión.",
+    "Primer intento sandbox terminó en timeout antes de producir datos; está separado y marcado INCOMPLETE."
+  ]
+}

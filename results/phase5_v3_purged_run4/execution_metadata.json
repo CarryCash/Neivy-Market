@@ -1,0 +1,161 @@
+{
+  "status": "SUCCESS",
+  "evidence_status": "POST_HOC_DIAGNOSTIC_NOT_CONFIRMATORY",
+  "execution_start_utc": "2026-10-24 16:21:59 UTC",
+  "platform": {
+    "system": "Windows",
+    "release": "10",
+    "machine": "AMD64",
+    "python_version": "3.10.9 (tags/v3.10.9:1dd9be6, Dec  6 2022, 20:01:21) [MSC v.1934 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python310\\python.exe"
+  },
+  "dependency_versions": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.2",
+    "scipy": "1.15.3"
+  },
+  "command_line": [
+    "scripts/run_phase5_evaluation.py",
+    "--dataset",
+    "data/research_dataset_v3_temporal_purged.parquet",
+    "--dataset-manifest",
+    "data/research_dataset_v3_temporal_purged.manifest.json",
+    "--results-dir",
+    "results/phase5_v3_purged_run4",
+    "--n-boot",
+    "1000"
+  ],
+  "parameters": {
+    "holdout_ratio": 0.2,
+    "k_folds": 5,
+    "purge_rule": "label_end_time < nominal test_start_time",
+    "embargo_seconds": 10,
+    "seed": 42,
+    "n_boot": 1000,
+    "bootstrap_block_seconds": [
+      10,
+      15,
+      30
+    ],
+    "fdr_family": "C1-C4; primary block length 15s",
+    "futility_delta_min": 0.001
+  },
+  "correction_code_verification": [
+    {
+      "path": "NAVIER_V3_PROTOCOL.md",
+      "expected_sha256": "0183b474253d5b6f50f25aba7e463a925a4ff5183da99a3648736dd93095114a",
+      "actual_sha256": "0183b474253d5b6f50f25aba7e463a925a4ff5183da99a3648736dd93095114a",
+      "match": true
+    },
+    {
+      "path": "docs/v3_freeze_manifest.md",
+      "expected_sha256": "9ebc5bc68cb802182d7b8190e0982783767774c612530121f0a14604f01e94c8",
+      "actual_sha256": "9ebc5bc68cb802182d7b8190e0982783767774c612530121f0a14604f01e94c8",
+      "match": true
+    },
+    {
+      "path": "docs/v3_temporal_correction_addendum.md",
+      "expected_sha256": "fb4bcec52392be5341b33f1667297424499f74d5a434a1083b191274921e2bf6",
+      "actual_sha256": "fb4bcec52392be5341b33f1667297424499f74d5a434a1083b191274921e2bf6",
+      "match": true
+    },
+    {
+      "path": "navier_lab/analysis.py",
+      "expected_sha256": "3ff3e6ab41aeb2fce9d34b3d1e49e2b71de03ae4892bcc64773c1af55cc3ce9a",
+      "actual_sha256": "3ff3e6ab41aeb2fce9d34b3d1e49e2b71de03ae4892bcc64773c1af55cc3ce9a",
+      "match": true
+    },
+    {
+      "path": "navier_lab/features.py",
+      "expected_sha256": "1b642ebfe827e9348f8ded67f9e5f706d0f6599074156094fb73131a2fa853db",
+      "actual_sha256": "1b642ebfe827e9348f8ded67f9e5f706d0f6599074156094fb73131a2fa853db",
+      "match": true
+    },
+    {
+      "path": "navier_lab/schema.py",
+      "expected_sha256": "a34cec8a9d57b3bdcf8c5b7e803452b33e288b238cba2f398c66f0fa8cf80e1a",
+      "actual_sha256": "a34cec8a9d57b3bdcf8c5b7e803452b33e288b238cba2f398c66f0fa8cf80e1a",
+      "match": true
+    },
+    {
+      "path": "scripts/build_research_dataset_v3.py",
+      "expected_sha256": "be58dbb3d8d7e22245dfb99897befeafb059742d6cfb37d47f5cde94a090d6ca",
+      "actual_sha256": "be58dbb3d8d7e22245dfb99897befeafb059742d6cfb37d47f5cde94a090d6ca",
+      "match": true
+    },
+    {
+      "path": "scripts/evaluate_models_oos_v3.py",
+      "expected_sha256": "2712a91f221d9987d523ac36c527e9d28f0139869344b991ba81e1f22f64324c",
+      "actual_sha256": "2712a91f221d9987d523ac36c527e9d28f0139869344b991ba81e1f22f64324c",
+      "match": true
+    },
+    {
+      "path": "scripts/evaluate_models_oos_v3_temporal.py",
+      "expected_sha256": "e91697b9e85270d58b53ee6bb03be1a0c271f0b91dce2394a8a287f12c616d2a",
+      "actual_sha256": "e91697b9e85270d58b53ee6bb03be1a0c271f0b91dce2394a8a287f12c616d2a",
+      "match": true
+    },
+    {
+      "path": "scripts/run_phase5_evaluation.py",
+      "expected_sha256": "bd969d320723a090f99c33ce343ef213596ada4afa8bbc493d5f4f04e34171ac",
+      "actual_sha256": "bd969d320723a090f99c33ce343ef213596ada4afa8bbc493d5f4f04e34171ac",
+      "match": true
+    },
+    {
+      "path": "scripts/run_phase5_evaluation_purged.py",
+      "expected_sha256": "3d3326e7fa54c3864e729876e46ccc987a53dd420c18d8e4119ede35c78d3146",
+      "actual_sha256": "3d3326e7fa54c3864e729876e46ccc987a53dd420c18d8e4119ede35c78d3146",
+      "match": true
+    },
+    {
+      "path": "tests/test_evaluate_models_oos_v3.py",
+      "expected_sha256": "0708e7d0812b51b1496e1e78d9522b8b9c16c3832618ae11407c9289a41db2cd",
+      "actual_sha256": "0708e7d0812b51b1496e1e78d9522b8b9c16c3832618ae11407c9289a41db2cd",
+      "match": true
+    },
+    {
+      "path": "tests/test_features_v3.py",
+      "expected_sha256": "2c2d93136b99102d56fec49589010b7dd806a6ff99f4298dbc29692f6a3ed8f2",
+      "actual_sha256": "2c2d93136b99102d56fec49589010b7dd806a6ff99f4298dbc29692f6a3ed8f2",
+      "match": true
+    }
+  ],
+  "dataset_verification": {
+    "path": "data\\research_dataset_v3_temporal_purged.parquet",
+    "sha256": "4a337ef506b3a5a18d50a3d3e45626658a4c7f2a469c9435dac618450c6948be",
+    "manifest_sha256": "81d84ae290088ce51fd69d40587a4a9a1038b1afe52e29954e7385af174200cb",
+    "rows": 13558,
+    "columns": 56,
+    "horizon_seconds": 10
+  },
+  "dataset_manifest_parameters": {
+    "horizon_seconds": 10,
+    "vol_window_seconds": 60,
+    "ofi_window_seconds": 5,
+    "vel_window_seconds": 5,
+    "gap_threshold_seconds": 3.0,
+    "staleness_threshold_ms": 1000.0,
+    "min_vol_floor_bps": 0.01
+  },
+  "dataframe_validation": {
+    "num_rows": 13558,
+    "num_cols": 56,
+    "sessions": [
+      "v3_val_session_01_btc_usd_l2",
+      "v3_val_session_02_btc_usd_l2",
+      "v3_val_session_03_btc_usd_l2",
+      "v3_val_session_04_btc_usd_l2",
+      "v3_val_session_05_btc_usd_l2",
+      "v3_val_session_06_btc_usd_l2",
+      "v3_val_session_07_btc_usd_l2"
+    ],
+    "num_sessions": 7,
+    "timestamp_start": "2026-10-22T16:59:53+00:00",
+    "timestamp_end": "2026-10-23T18:54:35+00:00",
+    "label_end_max": "2026-10-23T18:54:45+00:00",
+    "temporal_schema_validated": true
+  },
+  "evaluation_duration_seconds": 29.953,
+  "execution_end_utc": "2026-10-24 16:22:29 UTC",
+  "total_duration_seconds": 29.953
+}

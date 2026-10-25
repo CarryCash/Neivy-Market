@@ -1,0 +1,99 @@
+{
+  "execution_start_utc": "2026-10-24 14:01:17 UTC",
+  "platform": {
+    "system": "Windows",
+    "release": "10",
+    "machine": "AMD64",
+    "python_version": "3.10.9 (tags/v3.10.9:1dd9be6, Dec  6 2022, 20:01:21) [MSC v.1934 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\USER\\Downloads\\navier_lab_project\\navier_lab_project\\venv\\Scripts\\python.exe"
+  },
+  "dependency_versions": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "scipy": "1.15.3"
+  },
+  "command_line": [
+    "scripts/run_phase5_evaluation.py"
+  ],
+  "parameters": {
+    "holdout_ratio": 0.2,
+    "k_folds": 5,
+    "purge": 10,
+    "embargo": 10,
+    "seed": 42,
+    "futility_delta_min": 0.001
+  },
+  "frozen_files_verification": [
+    {
+      "path": "NAVIER_V3_PROTOCOL.md",
+      "expected_sha256": "0183b474253d5b6f50f25aba7e463a925a4ff5183da99a3648736dd93095114a",
+      "actual_sha256": "0183b474253d5b6f50f25aba7e463a925a4ff5183da99a3648736dd93095114a",
+      "match": true
+    },
+    {
+      "path": "navier_lab/features.py",
+      "expected_sha256": "1b642ebfe827e9348f8ded67f9e5f706d0f6599074156094fb73131a2fa853db",
+      "actual_sha256": "1b642ebfe827e9348f8ded67f9e5f706d0f6599074156094fb73131a2fa853db",
+      "match": true
+    },
+    {
+      "path": "navier_lab/schema.py",
+      "expected_sha256": "a34cec8a9d57b3bdcf8c5b7e803452b33e288b238cba2f398c66f0fa8cf80e1a",
+      "actual_sha256": "a34cec8a9d57b3bdcf8c5b7e803452b33e288b238cba2f398c66f0fa8cf80e1a",
+      "match": true
+    },
+    {
+      "path": "navier_lab/resampler.py",
+      "expected_sha256": "220be7754e5377f69d4539b400435f40a6e96257687237e1ac8cf957e3de7f35",
+      "actual_sha256": "220be7754e5377f69d4539b400435f40a6e96257687237e1ac8cf957e3de7f35",
+      "match": true
+    },
+    {
+      "path": "scripts/evaluate_models_oos_v3.py",
+      "expected_sha256": "52f566f12bc2728eacebeef97ebcce04133e68d3166bcdedfd9c6d5f7b67bedb",
+      "actual_sha256": "52f566f12bc2728eacebeef97ebcce04133e68d3166bcdedfd9c6d5f7b67bedb",
+      "match": true
+    },
+    {
+      "path": "scripts/capture_kraken_l2.py",
+      "expected_sha256": "d7f01a500f54ac790262ad41806394a8288189e5d31c55f012a57f903c681712",
+      "actual_sha256": "d7f01a500f54ac790262ad41806394a8288189e5d31c55f012a57f903c681712",
+      "match": true
+    },
+    {
+      "path": "tests/test_features_v3.py",
+      "expected_sha256": "9202eb588baa451c2cb53e8be6ba25bb18d08a8195a339eac6f2818074763118",
+      "actual_sha256": "9202eb588baa451c2cb53e8be6ba25bb18d08a8195a339eac6f2818074763118",
+      "match": true
+    }
+  ],
+  "dataset_verification": {
+    "parquet_path": "data\\research_dataset_v3.parquet",
+    "expected_sha256": "5e7139209e8ee62bfbd6a04f6387e8ba987894f98da75372b2a5a15645c0f7d8",
+    "actual_sha256": "5e7139209e8ee62bfbd6a04f6387e8ba987894f98da75372b2a5a15645c0f7d8",
+    "match": true,
+    "manifest_total_rows": 13558,
+    "manifest_total_cols": 51
+  },
+  "dataframe_validation": {
+    "num_rows": 13558,
+    "num_cols": 51,
+    "sessions": [
+      "v3_val_session_01_btc_usd_l2",
+      "v3_val_session_02_btc_usd_l2",
+      "v3_val_session_03_btc_usd_l2",
+      "v3_val_session_04_btc_usd_l2",
+      "v3_val_session_05_btc_usd_l2",
+      "v3_val_session_06_btc_usd_l2",
+      "v3_val_session_07_btc_usd_l2"
+    ],
+    "num_sessions": 7,
+    "timestamp_start": "2026-10-22 16:59:53+00:00",
+    "timestamp_end": "2026-10-23 18:54:35+00:00",
+    "validation_passed": true
+  },
+  "execution_end_utc": "2026-10-24 14:01:47 UTC",
+  "evaluation_duration_seconds": 29.578,
+  "total_duration_seconds": 29.641,
+  "status": "SUCCESS"
+}

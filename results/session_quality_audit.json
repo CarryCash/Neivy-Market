@@ -1,0 +1,607 @@
+[
+  {
+    "session_name": "session_10_btc_usd_l2",
+    "file_path": "C:\\Users\\USER\\Downloads\\navier_lab_project\\navier_lab_project\\data\\kraken\\sessions\\session_10_btc_usd_l2.parquet",
+    "file_sha256": "8eca04de6362a16b035bb5d2929afa01b442b4431ad10307c762d9d0a7e081a0",
+    "manifest_sha256": "8eca04de6362a16b035bb5d2929afa01b442b4431ad10307c762d9d0a7e081a0",
+    "sha_matches_manifest": true,
+    "status": "VALID",
+    "invalidation_reasons": [],
+    "duration_seconds": 900.375,
+    "raw_valid_rows": 44073,
+    "adapter_counters": {
+      "messages": 44971,
+      "snapshots": 1,
+      "valid_updates": 44072,
+      "checksum_failures": 0,
+      "malformed_messages": 0,
+      "ignored_messages": 898,
+      "reconnects": 0
+    },
+    "resampled_seconds": {
+      "total": 898,
+      "observed": 882,
+      "observed_pct": 98.22,
+      "carried_forward": 16,
+      "carried_forward_pct": 1.78,
+      "gap_discontinuity": 0,
+      "gap_pct": 0.0,
+      "max_consecutive_gap_seconds": 0,
+      "usable_seconds": 898
+    },
+    "spread_bps": {
+      "mean": 0.0126,
+      "median": 0.0121,
+      "p05": 0.0121,
+      "p95": 0.0121,
+      "min": 0.0121,
+      "max": 0.2534
+    },
+    "depth_quote_usd": {
+      "median": 994283.08,
+      "mean": 1045446.32,
+      "p05": 609587.49,
+      "p95": 1667637.41
+    },
+    "staleness_ms": {
+      "median": 73.31,
+      "p95": 679.99,
+      "max": 2406.01
+    },
+    "updates_per_second": {
+      "median": 30.5,
+      "p95": 159.3,
+      "max": 486
+    }
+  },
+  {
+    "session_name": "session_11_btc_usd_l2",
+    "file_path": "C:\\Users\\USER\\Downloads\\navier_lab_project\\navier_lab_project\\data\\kraken\\sessions\\session_11_btc_usd_l2.parquet",
+    "file_sha256": "d9b42553ec61356c165e5d25140d8f426c3cad8dbc5a431bff822564ca6be2ac",
+    "manifest_sha256": "d9b42553ec61356c165e5d25140d8f426c3cad8dbc5a431bff822564ca6be2ac",
+    "sha_matches_manifest": true,
+    "status": "VALID",
+    "invalidation_reasons": [],
+    "duration_seconds": 905.578,
+    "raw_valid_rows": 44694,
+    "adapter_counters": {
+      "messages": 45593,
+      "snapshots": 1,
+      "valid_updates": 44693,
+      "checksum_failures": 0,
+      "malformed_messages": 0,
+      "ignored_messages": 899,
+      "reconnects": 0
+    },
+    "resampled_seconds": {
+      "total": 898,
+      "observed": 880,
+      "observed_pct": 98.0,
+      "carried_forward": 18,
+      "carried_forward_pct": 2.0,
+      "gap_discontinuity": 0,
+      "gap_pct": 0.0,
+      "max_consecutive_gap_seconds": 0,
+      "usable_seconds": 898
+    },
+    "spread_bps": {
+      "mean": 0.013,
+      "median": 0.0121,
+      "p05": 0.0121,
+      "p95": 0.0121,
+      "min": 0.0121,
+      "max": 0.2295
+    },
+    "depth_quote_usd": {
+      "median": 976138.41,
+      "mean": 1057403.63,
+      "p05": 623362.61,
+      "p95": 1754864.81
+    },
+    "staleness_ms": {
+      "median": 72.49,
+      "p95": 665.79,
+      "max": 2137.56
+    },
+    "updates_per_second": {
+      "median": 29.0,
+      "p95": 162.15,
+      "max": 413
+    }
+  },
+  {
+    "session_name": "session_1_btc_usd_l2",
+    "file_path": "C:\\Users\\USER\\Downloads\\navier_lab_project\\navier_lab_project\\data\\kraken\\sessions\\session_1_btc_usd_l2.parquet",
+    "file_sha256": "066fb869486a64fabd5b8a2335585dbeb045f8360465d57188c8dfd9a3730288",
+    "manifest_sha256": "066fb869486a64fabd5b8a2335585dbeb045f8360465d57188c8dfd9a3730288",
+    "sha_matches_manifest": true,
+    "status": "VALID",
+    "invalidation_reasons": [],
+    "duration_seconds": 900.343,
+    "raw_valid_rows": 83129,
+    "adapter_counters": {
+      "messages": 84026,
+      "snapshots": 1,
+      "valid_updates": 83128,
+      "checksum_failures": 0,
+      "malformed_messages": 0,
+      "ignored_messages": 897,
+      "reconnects": 0
+    },
+    "resampled_seconds": {
+      "total": 898,
+      "observed": 897,
+      "observed_pct": 99.89,
+      "carried_forward": 1,
+      "carried_forward_pct": 0.11,
+      "gap_discontinuity": 0,
+      "gap_pct": 0.0,
+      "max_consecutive_gap_seconds": 0,
+      "usable_seconds": 898
+    },
+    "spread_bps": {
+      "mean": 0.0164,
+      "median": 0.0121,
+      "p05": 0.0121,
+      "p95": 0.0122,
+      "min": 0.0121,
+      "max": 1.1412
+    },
+    "depth_quote_usd": {
+      "median": 1157236.52,
+      "mean": 1145084.62,
+      "p05": 674305.17,
+      "p95": 1582894.73
+    },
+    "staleness_ms": {
+      "median": 31.82,
+      "p95": 340.48,
+      "max": 1196.94
+    },
+    "updates_per_second": {
+      "median": 79.0,
+      "p95": 222.0,
+      "max": 460
+    }
+  },
+  {
+    "session_name": "session_2_btc_usd_l2",
+    "file_path": "C:\\Users\\USER\\Downloads\\navier_lab_project\\navier_lab_project\\data\\kraken\\sessions\\session_2_btc_usd_l2.parquet",
+    "file_sha256": "a1732069e16b7788c6d70c83df75f8cb2910bde037965dc82b0a0728d8cf5f3e",
+    "manifest_sha256": "a1732069e16b7788c6d70c83df75f8cb2910bde037965dc82b0a0728d8cf5f3e",
+    "sha_matches_manifest": true,
+    "status": "VALID",
+    "invalidation_reasons": [],
+    "duration_seconds": 900.328,
+    "raw_valid_rows": 76818,
+    "adapter_counters": {
+      "messages": 77714,
+      "snapshots": 1,
+      "valid_updates": 76817,
+      "checksum_failures": 0,
+      "malformed_messages": 0,
+      "ignored_messages": 896,
+      "reconnects": 0
+    },
+    "resampled_seconds": {
+      "total": 897,
+      "observed": 896,
+      "observed_pct": 99.89,
+      "carried_forward": 1,
+      "carried_forward_pct": 0.11,
+      "gap_discontinuity": 0,
+      "gap_pct": 0.0,
+      "max_consecutive_gap_seconds": 0,
+      "usable_seconds": 897
+    },
+    "spread_bps": {
+      "mean": 0.0135,
+      "median": 0.0121,
+      "p05": 0.0121,
+      "p95": 0.0121,
+      "min": 0.0121,
+      "max": 0.3637
+    },
+    "depth_quote_usd": {
+      "median": 1145545.62,
+      "mean": 1127649.4,
+      "p05": 753201.17,
+      "p95": 1527151.54
+    },
+    "staleness_ms": {
+      "median": 31.9,
+      "p95": 245.34,
+      "max": 1136.1
+    },
+    "updates_per_second": {
+      "median": 69.0,
+      "p95": 217.0,
+      "max": 517
+    }
+  },
+  {
+    "session_name": "session_3_btc_usd_l2",
+    "file_path": "C:\\Users\\USER\\Downloads\\navier_lab_project\\navier_lab_project\\data\\kraken\\sessions\\session_3_btc_usd_l2.parquet",
+    "file_sha256": "fe13243cc893a73414de0df3f1e25a303ea9ad47d1cef8cb8e6cbac3ec504720",
+    "manifest_sha256": "fe13243cc893a73414de0df3f1e25a303ea9ad47d1cef8cb8e6cbac3ec504720",
+    "sha_matches_manifest": true,
+    "status": "VALID",
+    "invalidation_reasons": [],
+    "duration_seconds": 905.062,
+    "raw_valid_rows": 86921,
+    "adapter_counters": {
+      "messages": 87818,
+      "snapshots": 1,
+      "valid_updates": 86920,
+      "checksum_failures": 0,
+      "malformed_messages": 0,
+      "ignored_messages": 897,
+      "reconnects": 0
+    },
+    "resampled_seconds": {
+      "total": 898,
+      "observed": 894,
+      "observed_pct": 99.55,
+      "carried_forward": 4,
+      "carried_forward_pct": 0.45,
+      "gap_discontinuity": 0,
+      "gap_pct": 0.0,
+      "max_consecutive_gap_seconds": 0,
+      "usable_seconds": 898
+    },
+    "spread_bps": {
+      "mean": 0.0175,
+      "median": 0.0121,
+      "p05": 0.0121,
+      "p95": 0.0121,
+      "min": 0.0121,
+      "max": 0.7377
+    },
+    "depth_quote_usd": {
+      "median": 1086123.89,
+      "mean": 1065268.67,
+      "p05": 387961.63,
+      "p95": 1553847.92
+    },
+    "staleness_ms": {
+      "median": 33.41,
+      "p95": 309.76,
+      "max": 1764.46
+    },
+    "updates_per_second": {
+      "median": 82.0,
+      "p95": 244.0,
+      "max": 488
+    }
+  },
+  {
+    "session_name": "session_4_btc_usd_l2",
+    "file_path": "C:\\Users\\USER\\Downloads\\navier_lab_project\\navier_lab_project\\data\\kraken\\sessions\\session_4_btc_usd_l2.parquet",
+    "file_sha256": "d97fdbda8d81bc96ff256ea33dbc32a55e5e134f710eab4345c30fe4544c3a4b",
+    "manifest_sha256": "d97fdbda8d81bc96ff256ea33dbc32a55e5e134f710eab4345c30fe4544c3a4b",
+    "sha_matches_manifest": true,
+    "status": "VALID",
+    "invalidation_reasons": [],
+    "duration_seconds": 900.375,
+    "raw_valid_rows": 71599,
+    "adapter_counters": {
+      "messages": 72497,
+      "snapshots": 1,
+      "valid_updates": 71598,
+      "checksum_failures": 0,
+      "malformed_messages": 0,
+      "ignored_messages": 898,
+      "reconnects": 0
+    },
+    "resampled_seconds": {
+      "total": 899,
+      "observed": 898,
+      "observed_pct": 99.89,
+      "carried_forward": 1,
+      "carried_forward_pct": 0.11,
+      "gap_discontinuity": 0,
+      "gap_pct": 0.0,
+      "max_consecutive_gap_seconds": 0,
+      "usable_seconds": 899
+    },
+    "spread_bps": {
+      "mean": 0.0134,
+      "median": 0.0121,
+      "p05": 0.0121,
+      "p95": 0.0121,
+      "min": 0.0121,
+      "max": 0.4594
+    },
+    "depth_quote_usd": {
+      "median": 1109834.19,
+      "mean": 1104332.09,
+      "p05": 749378.18,
+      "p95": 1495712.95
+    },
+    "staleness_ms": {
+      "median": 34.66,
+      "p95": 337.88,
+      "max": 1751.48
+    },
+    "updates_per_second": {
+      "median": 65.0,
+      "p95": 204.0,
+      "max": 446
+    }
+  },
+  {
+    "session_name": "session_5_btc_usd_l2",
+    "file_path": "C:\\Users\\USER\\Downloads\\navier_lab_project\\navier_lab_project\\data\\kraken\\sessions\\session_5_btc_usd_l2.parquet",
+    "file_sha256": "7a6e229397d7cd13254325a393f1351aa1860ae93250af9ed3899a48a820f6c7",
+    "manifest_sha256": "7a6e229397d7cd13254325a393f1351aa1860ae93250af9ed3899a48a820f6c7",
+    "sha_matches_manifest": true,
+    "status": "VALID",
+    "invalidation_reasons": [],
+    "duration_seconds": 900.359,
+    "raw_valid_rows": 39061,
+    "adapter_counters": {
+      "messages": 39959,
+      "snapshots": 1,
+      "valid_updates": 39060,
+      "checksum_failures": 0,
+      "malformed_messages": 0,
+      "ignored_messages": 898,
+      "reconnects": 0
+    },
+    "resampled_seconds": {
+      "total": 898,
+      "observed": 887,
+      "observed_pct": 98.78,
+      "carried_forward": 11,
+      "carried_forward_pct": 1.22,
+      "gap_discontinuity": 0,
+      "gap_pct": 0.0,
+      "max_consecutive_gap_seconds": 0,
+      "usable_seconds": 898
+    },
+    "spread_bps": {
+      "mean": 0.0121,
+      "median": 0.0121,
+      "p05": 0.0121,
+      "p95": 0.0121,
+      "min": 0.0121,
+      "max": 0.0121
+    },
+    "depth_quote_usd": {
+      "median": 1046569.6,
+      "mean": 1043828.94,
+      "p05": 717871.44,
+      "p95": 1367525.11
+    },
+    "staleness_ms": {
+      "median": 98.04,
+      "p95": 624.47,
+      "max": 2978.22
+    },
+    "updates_per_second": {
+      "median": 27.0,
+      "p95": 141.3,
+      "max": 317
+    }
+  },
+  {
+    "session_name": "session_6_btc_usd_l2",
+    "file_path": "C:\\Users\\USER\\Downloads\\navier_lab_project\\navier_lab_project\\data\\kraken\\sessions\\session_6_btc_usd_l2.parquet",
+    "file_sha256": "66180bd98657d5f9a0837b0d003519d26b72c094b6808860154d83a58738bdbd",
+    "manifest_sha256": "66180bd98657d5f9a0837b0d003519d26b72c094b6808860154d83a58738bdbd",
+    "sha_matches_manifest": true,
+    "status": "VALID",
+    "invalidation_reasons": [],
+    "duration_seconds": 900.343,
+    "raw_valid_rows": 42752,
+    "adapter_counters": {
+      "messages": 43650,
+      "snapshots": 1,
+      "valid_updates": 42751,
+      "checksum_failures": 0,
+      "malformed_messages": 0,
+      "ignored_messages": 898,
+      "reconnects": 0
+    },
+    "resampled_seconds": {
+      "total": 898,
+      "observed": 880,
+      "observed_pct": 98.0,
+      "carried_forward": 18,
+      "carried_forward_pct": 2.0,
+      "gap_discontinuity": 0,
+      "gap_pct": 0.0,
+      "max_consecutive_gap_seconds": 0,
+      "usable_seconds": 898
+    },
+    "spread_bps": {
+      "mean": 0.0131,
+      "median": 0.0121,
+      "p05": 0.0121,
+      "p95": 0.0121,
+      "min": 0.0121,
+      "max": 0.3146
+    },
+    "depth_quote_usd": {
+      "median": 1098099.3,
+      "mean": 1082471.54,
+      "p05": 697054.4,
+      "p95": 1479112.13
+    },
+    "staleness_ms": {
+      "median": 90.77,
+      "p95": 679.62,
+      "max": 1937.67
+    },
+    "updates_per_second": {
+      "median": 31.0,
+      "p95": 147.0,
+      "max": 340
+    }
+  },
+  {
+    "session_name": "session_7_btc_usd_l2",
+    "file_path": "C:\\Users\\USER\\Downloads\\navier_lab_project\\navier_lab_project\\data\\kraken\\sessions\\session_7_btc_usd_l2.parquet",
+    "file_sha256": "c2bcbfd93bb5641994dd7f970efff13939d9915cc47faa9cd063027c9bbbc034",
+    "manifest_sha256": "c2bcbfd93bb5641994dd7f970efff13939d9915cc47faa9cd063027c9bbbc034",
+    "sha_matches_manifest": true,
+    "status": "VALID",
+    "invalidation_reasons": [],
+    "duration_seconds": 905.344,
+    "raw_valid_rows": 44883,
+    "adapter_counters": {
+      "messages": 45782,
+      "snapshots": 1,
+      "valid_updates": 44882,
+      "checksum_failures": 0,
+      "malformed_messages": 0,
+      "ignored_messages": 899,
+      "reconnects": 0
+    },
+    "resampled_seconds": {
+      "total": 898,
+      "observed": 893,
+      "observed_pct": 99.44,
+      "carried_forward": 5,
+      "carried_forward_pct": 0.56,
+      "gap_discontinuity": 0,
+      "gap_pct": 0.0,
+      "max_consecutive_gap_seconds": 0,
+      "usable_seconds": 898
+    },
+    "spread_bps": {
+      "mean": 0.0136,
+      "median": 0.0121,
+      "p05": 0.0121,
+      "p95": 0.0121,
+      "min": 0.0121,
+      "max": 0.7155
+    },
+    "depth_quote_usd": {
+      "median": 1082596.65,
+      "mean": 1095407.29,
+      "p05": 699543.9,
+      "p95": 1520147.87
+    },
+    "staleness_ms": {
+      "median": 78.78,
+      "p95": 520.81,
+      "max": 1779.07
+    },
+    "updates_per_second": {
+      "median": 30.5,
+      "p95": 164.3,
+      "max": 491
+    }
+  },
+  {
+    "session_name": "session_8_btc_usd_l2",
+    "file_path": "C:\\Users\\USER\\Downloads\\navier_lab_project\\navier_lab_project\\data\\kraken\\sessions\\session_8_btc_usd_l2.parquet",
+    "file_sha256": "6de675920f053cbfe9b3a2bec154bd08e35a677d893bb136176f7091a783c6b7",
+    "manifest_sha256": "6de675920f053cbfe9b3a2bec154bd08e35a677d893bb136176f7091a783c6b7",
+    "sha_matches_manifest": true,
+    "status": "VALID",
+    "invalidation_reasons": [],
+    "duration_seconds": 900.515,
+    "raw_valid_rows": 37867,
+    "adapter_counters": {
+      "messages": 38765,
+      "snapshots": 1,
+      "valid_updates": 37866,
+      "checksum_failures": 0,
+      "malformed_messages": 0,
+      "ignored_messages": 898,
+      "reconnects": 0
+    },
+    "resampled_seconds": {
+      "total": 899,
+      "observed": 887,
+      "observed_pct": 98.67,
+      "carried_forward": 12,
+      "carried_forward_pct": 1.33,
+      "gap_discontinuity": 0,
+      "gap_pct": 0.0,
+      "max_consecutive_gap_seconds": 0,
+      "usable_seconds": 899
+    },
+    "spread_bps": {
+      "mean": 0.0124,
+      "median": 0.0121,
+      "p05": 0.0121,
+      "p95": 0.0121,
+      "min": 0.0121,
+      "max": 0.1577
+    },
+    "depth_quote_usd": {
+      "median": 1126953.0,
+      "mean": 1122976.31,
+      "p05": 611677.0,
+      "p95": 1586726.52
+    },
+    "staleness_ms": {
+      "median": 109.94,
+      "p95": 718.88,
+      "max": 2290.04
+    },
+    "updates_per_second": {
+      "median": 23.0,
+      "p95": 149.3,
+      "max": 400
+    }
+  },
+  {
+    "session_name": "session_9_btc_usd_l2",
+    "file_path": "C:\\Users\\USER\\Downloads\\navier_lab_project\\navier_lab_project\\data\\kraken\\sessions\\session_9_btc_usd_l2.parquet",
+    "file_sha256": "71ad457c31e6a579e56da1aa5727b897b924baa3aa486ceebf8e5f0c3c4e932e",
+    "manifest_sha256": "71ad457c31e6a579e56da1aa5727b897b924baa3aa486ceebf8e5f0c3c4e932e",
+    "sha_matches_manifest": true,
+    "status": "VALID",
+    "invalidation_reasons": [],
+    "duration_seconds": 900.328,
+    "raw_valid_rows": 36368,
+    "adapter_counters": {
+      "messages": 37267,
+      "snapshots": 1,
+      "valid_updates": 36367,
+      "checksum_failures": 0,
+      "malformed_messages": 0,
+      "ignored_messages": 899,
+      "reconnects": 0
+    },
+    "resampled_seconds": {
+      "total": 898,
+      "observed": 878,
+      "observed_pct": 97.77,
+      "carried_forward": 20,
+      "carried_forward_pct": 2.23,
+      "gap_discontinuity": 0,
+      "gap_pct": 0.0,
+      "max_consecutive_gap_seconds": 0,
+      "usable_seconds": 898
+    },
+    "spread_bps": {
+      "mean": 0.0121,
+      "median": 0.0121,
+      "p05": 0.0121,
+      "p95": 0.0121,
+      "min": 0.0121,
+      "max": 0.0243
+    },
+    "depth_quote_usd": {
+      "median": 1262518.5,
+      "mean": 1299778.73,
+      "p05": 903231.25,
+      "p95": 1750835.39
+    },
+    "staleness_ms": {
+      "median": 120.12,
+      "p95": 761.79,
+      "max": 2889.68
+    },
+    "updates_per_second": {
+      "median": 22.0,
+      "p95": 139.3,
+      "max": 449
+    }
+  }
+]

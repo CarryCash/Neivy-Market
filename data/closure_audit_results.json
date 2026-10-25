@@ -1,0 +1,231 @@
+{
+  "task1_crypto": [
+    {
+      "componente": "Protocolo Cient\u00edfico",
+      "ruta": "NAVIER_V3_PROTOCOL.md",
+      "hash_esperado": "0183B474253D5B6F50F25ABA7E463A925A4FF5183DA99A3648736DD93095114A",
+      "hash_calculado": "0183B474253D5B6F50F25ABA7E463A925A4FF5183DA99A3648736DD93095114A",
+      "coincidencia_exacta": true
+    },
+    {
+      "componente": "Pipeline de Features",
+      "ruta": "navier_lab/features.py",
+      "hash_esperado": "1B642EBFE827E9348F8DED67F9E5F706D0F6599074156094FB73131A2FA853DB",
+      "hash_calculado": "1B642EBFE827E9348F8DED67F9E5F706D0F6599074156094FB73131A2FA853DB",
+      "coincidencia_exacta": true
+    },
+    {
+      "componente": "Esquema y Configuraci\u00f3n",
+      "ruta": "navier_lab/schema.py",
+      "hash_esperado": "A34CEC8A9D57B3BDCF8C5B7E803452B33E288B238CBA2F398C66F0FA8CF80E1A",
+      "hash_calculado": "A34CEC8A9D57B3BDCF8C5B7E803452B33E288B238CBA2F398C66F0FA8CF80E1A",
+      "coincidencia_exacta": true
+    },
+    {
+      "componente": "Resampleador Causal L2",
+      "ruta": "navier_lab/resampler.py",
+      "hash_esperado": "220BE7754E5377F69D4539B400435F40A6E96257687237E1AC8CF957E3DE7F35",
+      "hash_calculado": "220BE7754E5377F69D4539B400435F40A6E96257687237E1AC8CF957E3DE7F35",
+      "coincidencia_exacta": true
+    },
+    {
+      "componente": "Motor de Evaluaci\u00f3n OOS",
+      "ruta": "scripts/evaluate_models_oos_v3.py",
+      "hash_esperado": "52F566F12BC2728EACEBEEF97EBCCE04133E68D3166BCDEDFD9C6D5F7B67BEDB",
+      "hash_calculado": "52F566F12BC2728EACEBEEF97EBCCE04133E68D3166BCDEDFD9C6D5F7B67BEDB",
+      "coincidencia_exacta": true
+    },
+    {
+      "componente": "Capturador L2",
+      "ruta": "scripts/capture_kraken_l2.py",
+      "hash_esperado": "D7F01A500F54AC790262AD41806394A8288189E5D31C55F012A57F903C681712",
+      "hash_calculado": "D7F01A500F54AC790262AD41806394A8288189E5D31C55F012A57F903C681712",
+      "coincidencia_exacta": true
+    },
+    {
+      "componente": "Suite de Pruebas V3",
+      "ruta": "tests/test_features_v3.py",
+      "hash_esperado": "9202EB588BAA451C2CB53E8BE6BA25BB18D08A8195A339EAC6F2818074763118",
+      "hash_calculado": "9202EB588BAA451C2CB53E8BE6BA25BB18D08A8195A339EAC6F2818074763118",
+      "coincidencia_exacta": true
+    }
+  ],
+  "task2_clusters": [
+    {
+      "cluster": 1,
+      "sesion": "v3_val_session_01_btc_usd_l2",
+      "n_obs": 2,
+      "fila_inicio": 891,
+      "fila_fin": 892,
+      "ts_inicio": "2026-10-22 17:15:04+00:00",
+      "ts_fin": "2026-10-22 17:15:05+00:00",
+      "duracion_seg": 1,
+      "y_min": 10.85710354198406,
+      "y_max": 11.067037312387637,
+      "particion": "Eval (Train only)"
+    },
+    {
+      "cluster": 2,
+      "sesion": "v3_val_session_06_btc_usd_l2",
+      "n_obs": 3,
+      "fila_inicio": 10272,
+      "fila_fin": 10274,
+      "ts_inicio": "2026-10-23 17:46:20+00:00",
+      "ts_fin": "2026-10-23 17:46:22+00:00",
+      "duracion_seg": 2,
+      "y_min": 10.530507754906953,
+      "y_max": 10.530507754906953,
+      "particion": "Split 4 Test"
+    },
+    {
+      "cluster": 3,
+      "sesion": "v3_val_session_06_btc_usd_l2",
+      "n_obs": 10,
+      "fila_inicio": 10550,
+      "fila_fin": 10559,
+      "ts_inicio": "2026-10-23 17:52:06+00:00",
+      "ts_fin": "2026-10-23 17:52:15+00:00",
+      "duracion_seg": 9,
+      "y_min": -91.49232426049831,
+      "y_max": -43.798177653824496,
+      "particion": "Split 4 Test"
+    },
+    {
+      "cluster": 4,
+      "sesion": "v3_val_session_06_btc_usd_l2",
+      "n_obs": 4,
+      "fila_inicio": 11161,
+      "fila_fin": 11164,
+      "ts_inicio": "2026-10-23 18:03:20+00:00",
+      "ts_fin": "2026-10-23 18:03:23+00:00",
+      "duracion_seg": 3,
+      "y_min": -14.45655493544154,
+      "y_max": -10.657331296485781,
+      "particion": "Holdout (20%)"
+    },
+    {
+      "cluster": 5,
+      "sesion": "v3_val_session_07_btc_usd_l2",
+      "n_obs": 9,
+      "fila_inicio": 12010,
+      "fila_fin": 12018,
+      "ts_inicio": "2026-10-23 18:20:58+00:00",
+      "ts_fin": "2026-10-23 18:21:06+00:00",
+      "duracion_seg": 8,
+      "y_min": -21.315009538187553,
+      "y_max": -10.376180836631548,
+      "particion": "Holdout (20%)"
+    },
+    {
+      "cluster": 6,
+      "sesion": "v3_val_session_07_btc_usd_l2",
+      "n_obs": 10,
+      "fila_inicio": 12941,
+      "fila_fin": 12950,
+      "ts_inicio": "2026-10-23 18:40:48+00:00",
+      "ts_fin": "2026-10-23 18:40:57+00:00",
+      "duracion_seg": 9,
+      "y_min": 48.48023532380371,
+      "y_max": 94.88581250774266,
+      "particion": "Holdout (20%)"
+    },
+    {
+      "cluster": 7,
+      "sesion": "v3_val_session_07_btc_usd_l2",
+      "n_obs": 7,
+      "fila_inicio": 13198,
+      "fila_fin": 13204,
+      "ts_inicio": "2026-10-23 18:46:03+00:00",
+      "ts_fin": "2026-10-23 18:46:09+00:00",
+      "duracion_seg": 6,
+      "y_min": -107.21242363243036,
+      "y_max": -20.18750262620317,
+      "particion": "Holdout (20%)"
+    }
+  ],
+  "task3_spreads": [
+    {
+      "session_id": "v3_val_session_01_btc_usd_l2",
+      "n_obs": 2259,
+      "mean_bps": 0.01738266363254159,
+      "median_bps": 0.012318373285614512,
+      "p95_bps": 0.012337385548334578,
+      "max_bps": 1.2686674249934766,
+      "pct_at_min_tick_0.10": 98.36210712704737,
+      "n_above_p95": 106,
+      "mean_above_p95": 0.12026920948039224
+    },
+    {
+      "session_id": "v3_val_session_02_btc_usd_l2",
+      "n_obs": 1897,
+      "mean_bps": 0.0156378617959065,
+      "median_bps": 0.012264573838715808,
+      "p95_bps": 0.012288507111207776,
+      "max_bps": 0.7368780442274202,
+      "pct_at_min_tick_0.10": 98.78755930416447,
+      "n_above_p95": 93,
+      "mean_above_p95": 0.08116410923582704
+    },
+    {
+      "session_id": "v3_val_session_03_btc_usd_l2",
+      "n_obs": 1286,
+      "mean_bps": 0.013336485462892534,
+      "median_bps": 0.012268741884174584,
+      "p95_bps": 0.012289458533317123,
+      "max_bps": 0.4414691603123234,
+      "pct_at_min_tick_0.10": 99.53343701399689,
+      "n_above_p95": 62,
+      "mean_above_p95": 0.03444590287573132
+    },
+    {
+      "session_id": "v3_val_session_04_btc_usd_l2",
+      "n_obs": 2036,
+      "mean_bps": 0.015312554459588958,
+      "median_bps": 0.012265310941677928,
+      "p95_bps": 0.012283752218447965,
+      "max_bps": 1.0767002075098504,
+      "pct_at_min_tick_0.10": 99.21414538310412,
+      "n_above_p95": 101,
+      "mean_above_p95": 0.07378153588445406
+    },
+    {
+      "session_id": "v3_val_session_05_btc_usd_l2",
+      "n_obs": 2194,
+      "mean_bps": 0.01302840209685131,
+      "median_bps": 0.012248575030332843,
+      "p95_bps": 0.012268486000279582,
+      "max_bps": 0.8459526376875248,
+      "pct_at_min_tick_0.10": 99.68094804010939,
+      "n_above_p95": 83,
+      "mean_above_p95": 0.032806545186790124
+    },
+    {
+      "session_id": "v3_val_session_06_btc_usd_l2",
+      "n_obs": 2068,
+      "mean_bps": 0.012643825529113686,
+      "median_bps": 0.012270307513025946,
+      "p95_bps": 0.012281564694833066,
+      "max_bps": 0.5639494112847833,
+      "pct_at_min_tick_0.10": 99.85493230174082,
+      "n_above_p95": 95,
+      "mean_above_p95": 0.020413138961054646
+    },
+    {
+      "session_id": "v3_val_session_07_btc_usd_l2",
+      "n_obs": 1818,
+      "mean_bps": 0.012448802977195193,
+      "median_bps": 0.012282401897248402,
+      "p95_bps": 0.012293416812755753,
+      "max_bps": 0.1351320639507909,
+      "pct_at_min_tick_0.10": 99.77997799779979,
+      "n_above_p95": 86,
+      "mean_above_p95": 0.01586399549624981
+    }
+  ],
+  "task4_evaluator": {
+    "file": "scripts/evaluate_models_oos_v3.py",
+    "has_main": false,
+    "function": "evaluate_dataset_v3",
+    "protocol_specs_verified": true
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "project": "NAVIER",
+  "version": "001.9",
+  "stage": "1s_causal_resampling",
+  "input_file": "pilot_btc_usd_l2.parquet",
+  "input_sha256": "597c736af7863edfe9e427890058b79051da25bc8a54b2704f7dc09c38c4bc6b",
+  "output_file": "pilot_btc_usd_l2_1s.parquet",
+  "output_sha256": "aa981ab2a9dc65641ec1508b1d44623ccf283e13c70d3178e03a206d2c4772f5",
+  "resample_rule": "semi_open_left_closed_right_(T-1s,T]_labeled_at_T",
+  "gap_threshold_seconds_provisional": 3.0,
+  "total_seconds": 898,
+  "observed_seconds": 887,
+  "carried_forward_seconds": 10,
+  "gap_discontinuity_seconds": 1,
+  "observed_ratio": 0.9878,
+  "staleness_ms_stats": {
+    "mean": 165.74,
+    "median": 83.6,
+    "max": 3148.68
+  },
+  "updates_per_second_stats": {
+    "mean": 42.4,
+    "median": 25.0,
+    "max": 370
+  }
+}

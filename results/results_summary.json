@@ -1,0 +1,235 @@
+{
+  "integrity_tests_passed": true,
+  "max_vif_model": 46.2984271577983,
+  "n_sig_univariate_fdr5": {
+    "S0_noise": 0,
+    "S1_traditional": 8,
+    "S2_navier": 16
+  },
+  "n_sig_navier_univariate_fdr5": {
+    "S0_noise": 0,
+    "S1_traditional": 1,
+    "S2_navier": 7
+  },
+  "calibration": {
+    "rechazo_naive_5pct": {
+      "imb_full": 0.5233,
+      "dI_dt": 0.3645,
+      "grad_asym": 0.51,
+      "u": 0.2852,
+      "ofi_5": 0.3348,
+      "vol60_bps": 0.523
+    },
+    "rechazo_HAC_5pct": {
+      "imb_full": 0.0533,
+      "dI_dt": 0.0433,
+      "grad_asym": 0.0767,
+      "u": 0.0667,
+      "ofi_5": 0.08,
+      "vol60_bps": 0.0767
+    },
+    "sd_t_HAC": {
+      "imb_full": 1.0399,
+      "dI_dt": 1.0128,
+      "grad_asym": 1.0997,
+      "u": 1.0615,
+      "ofi_5": 1.1088,
+      "vol60_bps": 1.071
+    }
+  },
+  "nested": {
+    "S0_noise": {
+      "delta_r2_pct": -0.01376510213866311,
+      "dm_p": 0.819419291853658,
+      "wald_p": 0.07675383510630057,
+      "placebo_p": 0.033112582781456956,
+      "folds_pos": 2,
+      "r2_oos_pct": {
+        "A  (basics)": -0.07514781661750458,
+        "B  (+tradicionales)": -0.16220153551791405,
+        "B+ (+rezagos de I)": -0.15554500792325232,
+        "C  (B+Navier)": -0.17139155084400226,
+        "C+ (B+ +Navier)": -0.16931011006191543
+      },
+      "verdict": {
+        "c1_wald": false,
+        "c2_dm": false,
+        "c3_folds": false,
+        "c4_placebo": false,
+        "signal": false,
+        "text": "SIN EVIDENCIA de señal incremental Navier -> NO se avanza con esta hipótesis tal cual"
+      }
+    },
+    "S1_traditional": {
+      "delta_r2_pct": -0.019990941100500592,
+      "dm_p": 0.7298365971650009,
+      "wald_p": 0.1045715740371208,
+      "placebo_p": 0.052980132450331126,
+      "folds_pos": 1,
+      "r2_oos_pct": {
+        "A  (basics)": -0.08381125788807786,
+        "B  (+tradicionales)": 0.14380962465496694,
+        "B+ (+rezagos de I)": 0.14644672608014053,
+        "C  (B+Navier)": 0.1250946602943448,
+        "C+ (B+ +Navier)": 0.12645578497963994
+      },
+      "verdict": {
+        "c1_wald": false,
+        "c2_dm": false,
+        "c3_folds": false,
+        "c4_placebo": false,
+        "signal": false,
+        "text": "SIN EVIDENCIA de señal incremental Navier -> NO se avanza con esta hipótesis tal cual"
+      }
+    },
+    "S2_navier": {
+      "delta_r2_pct": 0.43617039887425824,
+      "dm_p": 0.0008651162316500215,
+      "wald_p": 1.9270896471924547e-15,
+      "placebo_p": 0.006622516556291391,
+      "folds_pos": 5,
+      "r2_oos_pct": {
+        "A  (basics)": -0.15508472264502693,
+        "B  (+tradicionales)": 3.125174705689826,
+        "B+ (+rezagos de I)": 4.007100821514332,
+        "C  (B+Navier)": 4.0343362278607025,
+        "C+ (B+ +Navier)": 4.443271220388589
+      },
+      "verdict": {
+        "c1_wald": true,
+        "c2_dm": true,
+        "c3_folds": true,
+        "c4_placebo": true,
+        "signal": true,
+        "text": "SEÑAL INCREMENTAL DETECTADA (candidata a Notebook 002)"
+      }
+    }
+  },
+  "power": {
+    "fraction": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "delta_r2": [
+      -0.00019990941174030663,
+      -7.393570609293132e-05,
+      0.0007948984505709022,
+      0.002324315191121973,
+      0.004361703995079402
+    ],
+    "wald_p": [
+      0.10457156914823326,
+      0.0621608549749423,
+      0.0004097000938079264,
+      1.1605475015632856e-08,
+      1.9270895583115833e-15
+    ],
+    "dm_p": [
+      0.7298365988643345,
+      0.9056265444453911,
+      0.3299933024774576,
+      0.028728746220749557,
+      0.0008651161557990063
+    ],
+    "p_placebo": [
+      0.01652892561983471,
+      0.01652892561983471,
+      0.008264462809917356,
+      0.008264462809917356,
+      0.008264462809917356
+    ],
+    "folds_pos": [
+      1,
+      2,
+      4,
+      4,
+      5
+    ],
+    "signal": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  "horizons": [
+    {
+      "escenario": "S1_traditional",
+      "H": 5,
+      "delta_r2_pct": -0.01484237317118664,
+      "wald_p": 0.13693244523447226,
+      "dm_p": 0.6008250171143662,
+      "p_placebo": 0.039603960396039604,
+      "folds_pos": 1,
+      "señal": false
+    },
+    {
+      "escenario": "S1_traditional",
+      "H": 10,
+      "delta_r2_pct": -0.020048698616270677,
+      "wald_p": 0.10346754171007085,
+      "dm_p": 0.729305342382381,
+      "p_placebo": 0.06930693069306931,
+      "folds_pos": 1,
+      "señal": false
+    },
+    {
+      "escenario": "S1_traditional",
+      "H": 30,
+      "delta_r2_pct": -0.3919663586055111,
+      "wald_p": 0.4424094874999316,
+      "dm_p": 0.001366500872848493,
+      "p_placebo": 0.9306930693069307,
+      "folds_pos": 0,
+      "señal": false
+    },
+    {
+      "escenario": "S2_navier",
+      "H": 5,
+      "delta_r2_pct": 0.282496883968153,
+      "wald_p": 5.5232638942298576e-18,
+      "dm_p": 0.0001823896670221467,
+      "p_placebo": 0.009900990099009901,
+      "folds_pos": 4,
+      "señal": true
+    },
+    {
+      "escenario": "S2_navier",
+      "H": 10,
+      "delta_r2_pct": 0.43556740140883177,
+      "wald_p": 1.9893599780893403e-15,
+      "dm_p": 0.0008780501650109714,
+      "p_placebo": 0.009900990099009901,
+      "folds_pos": 5,
+      "señal": true
+    },
+    {
+      "escenario": "S2_navier",
+      "H": 30,
+      "delta_r2_pct": 0.5239281961549436,
+      "wald_p": 3.0033020868578005e-14,
+      "dm_p": 0.03290168167374306,
+      "p_placebo": 0.009900990099009901,
+      "folds_pos": 4,
+      "señal": false
+    }
+  ],
+  "mc_false_positive": {
+    "n_runs": {
+      "S0_noise": 20,
+      "S1_traditional": 20
+    },
+    "signal_true": {
+      "S0_noise": 0,
+      "S1_traditional": 0
+    },
+    "wald_p_lt_1pct": {
+      "S0_noise": 0,
+      "S1_traditional": 0
+    }
+  }
+}

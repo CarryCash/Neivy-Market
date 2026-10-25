@@ -1,0 +1,166 @@
+{
+  "BTC_USDT": {
+    "symbol": "BTC/USDT",
+    "manifest": {
+      "elapsed_seconds": 905.109,
+      "valid_rows_raw": 22985,
+      "messages": 23883,
+      "valid_updates": 22984,
+      "checksum_failures": 0,
+      "malformed_messages": 0,
+      "ignored_messages": 898,
+      "reconnects": 0,
+      "final_status": "VALID"
+    },
+    "seconds": {
+      "total": 898,
+      "observed": 823,
+      "observed_pct": 91.65,
+      "carried_forward": 69,
+      "carried_forward_pct": 7.68,
+      "gap_discontinuity": 6,
+      "gap_discontinuity_pct": 0.67,
+      "usable_standard_sec": 892,
+      "usable_standard_pct": 99.33,
+      "usable_strict_sec": 823,
+      "usable_strict_pct": 91.65
+    },
+    "spread_bps": {
+      "mean": 0.2139,
+      "std": 0.2558,
+      "median": 0.0976,
+      "p05": 0.0122,
+      "p25": 0.0122,
+      "p75": 0.3788,
+      "p95": 0.6843,
+      "p99": 0.9908,
+      "min": 0.0122,
+      "max": 1.609
+    },
+    "depth_nominal_quote": {
+      "mean": 177449.41,
+      "median": 177441.92,
+      "p05": 108761.8,
+      "p95": 247804.13,
+      "bid_mean": 71297.27,
+      "ask_mean": 106152.14
+    },
+    "depth_btc": {
+      "mean": 2.1661,
+      "median": 2.1632,
+      "p05": 1.3272,
+      "p95": 3.0287,
+      "bid_mean": 0.8704,
+      "ask_mean": 1.2957
+    },
+    "updates_per_second": {
+      "mean": 25.6,
+      "std": 29.86,
+      "median": 15.0,
+      "p75": 36.0,
+      "p95": 88.0,
+      "p99": 126.3,
+      "max": 264
+    },
+    "staleness_ms": {
+      "mean": 340.43,
+      "median": 113.28,
+      "p75": 435.5,
+      "p95": 1368.19,
+      "p99": 2733.33,
+      "max": 7243.63
+    }
+  },
+  "BTC_USD": {
+    "symbol": "BTC/USD",
+    "manifest": {
+      "elapsed_seconds": 905.093,
+      "valid_rows_raw": 38078,
+      "messages": 38976,
+      "valid_updates": 38077,
+      "checksum_failures": 0,
+      "malformed_messages": 0,
+      "ignored_messages": 898,
+      "reconnects": 0,
+      "final_status": "VALID"
+    },
+    "seconds": {
+      "total": 898,
+      "observed": 887,
+      "observed_pct": 98.78,
+      "carried_forward": 10,
+      "carried_forward_pct": 1.11,
+      "gap_discontinuity": 1,
+      "gap_discontinuity_pct": 0.11,
+      "usable_standard_sec": 897,
+      "usable_standard_pct": 99.89,
+      "usable_strict_sec": 887,
+      "usable_strict_pct": 98.78
+    },
+    "spread_bps": {
+      "mean": 0.0127,
+      "std": 0.0089,
+      "median": 0.0122,
+      "p05": 0.0122,
+      "p25": 0.0122,
+      "p75": 0.0122,
+      "p95": 0.0122,
+      "p99": 0.0122,
+      "min": 0.0122,
+      "max": 0.1957
+    },
+    "depth_nominal_quote": {
+      "mean": 960420.32,
+      "median": 961098.33,
+      "p05": 583775.75,
+      "p95": 1303183.01,
+      "bid_mean": 265391.62,
+      "ask_mean": 695028.7
+    },
+    "depth_btc": {
+      "mean": 11.7358,
+      "median": 11.7379,
+      "p05": 7.1381,
+      "p95": 15.9146,
+      "bid_mean": 3.2436,
+      "ask_mean": 8.4922
+    },
+    "updates_per_second": {
+      "mean": 42.4,
+      "std": 47.78,
+      "median": 25.0,
+      "p75": 57.0,
+      "p95": 141.15,
+      "p99": 203.36,
+      "max": 370
+    },
+    "staleness_ms": {
+      "mean": 165.74,
+      "median": 83.6,
+      "p75": 203.32,
+      "p95": 591.23,
+      "p99": 1019.95,
+      "max": 3148.68
+    }
+  },
+  "paired_comparison": {
+    "aligned_seconds": 898,
+    "mutually_valid_seconds": 891,
+    "spread_diff_usd_minus_usdt_bps": {
+      "mean": -0.2009,
+      "median": -0.0854,
+      "p05": -0.672,
+      "p95": 0.0
+    },
+    "updates_diff_usd_minus_usdt": {
+      "mean": 16.81,
+      "median": 9.0,
+      "usd_higher_count": 628,
+      "usd_higher_pct": 69.93
+    },
+    "staleness_diff_usd_minus_usdt_ms": {
+      "mean": -144.22,
+      "median": -16.0
+    }
+  }
+}

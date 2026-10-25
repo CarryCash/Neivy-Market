@@ -1,0 +1,29 @@
+{
+  "execution_start_utc": "2026-10-24 14:00:56 UTC",
+  "platform": {
+    "system": "Windows",
+    "release": "10",
+    "machine": "AMD64",
+    "python_version": "3.10.9 (tags/v3.10.9:1dd9be6, Dec  6 2022, 20:01:21) [MSC v.1934 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\USER\\Downloads\\navier_lab_project\\navier_lab_project\\venv\\Scripts\\python.exe"
+  },
+  "dependency_versions": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "scipy": "1.15.3"
+  },
+  "command_line": [
+    "scripts/run_phase5_evaluation.py"
+  ],
+  "parameters": {
+    "holdout_ratio": 0.2,
+    "k_folds": 5,
+    "purge": 10,
+    "embargo": 10,
+    "seed": 42,
+    "futility_delta_min": 0.001
+  },
+  "status": "FAILED",
+  "error_message": "Se esperaban al menos 7 archivos congelados, encontrados: 0",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\USER\\Downloads\\navier_lab_project\\navier_lab_project\\scripts\\run_phase5_evaluation.py\", line 183, in run_phase5_evaluation\n    frozen_records = verify_frozen_manifest(manifest_frozen, PROJECT_ROOT)\n  File \"C:\\Users\\USER\\Downloads\\navier_lab_project\\navier_lab_project\\scripts\\run_phase5_evaluation.py\", line 69, in verify_frozen_manifest\n    raise ValueError(f\"Se esperaban al menos 7 archivos congelados, encontrados: {len(records)}\")\nValueError: Se esperaban al menos 7 archivos congelados, encontrados: 0\n"
+}

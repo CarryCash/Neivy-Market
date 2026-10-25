@@ -1,0 +1,151 @@
+{
+  "status": "PASS_ONLINE_TIMING_SMOKE",
+  "checks": {
+    "manifest_success": true,
+    "instrument_channel_depth": true,
+    "raw_sha_matches_manifest": true,
+    "feature_sha_matches_manifest": true,
+    "schema_v3": true,
+    "row_count_matches": true,
+    "capture_ids_unique_consecutive": true,
+    "exchange_event_time_monotonic": true,
+    "perf_clock_ordered": true,
+    "perf_clock_row_order_monotonic": true,
+    "no_integrity_transport_failures": true,
+    "feature_ids_unique_consecutive": true,
+    "feature_source_ids_exist": "True",
+    "feature_timing_ordered": true,
+    "feature_source_is_not_future": true,
+    "feature_source_row_matches_resampler": true,
+    "feature_trigger_precedes_compute": "True",
+    "batch_online_equivalent": true,
+    "all_durations_nonnegative": true,
+    "frame_receipt_span_within_120s": true
+  },
+  "capture_sha256": "b69e3b60a62114289b8b6824a86d0a3c994d1fcb310628e15be25fd626d3ecbf",
+  "feature_sha256": "ffe35389b4b8732450b098a58881163915fb99d2db948b3aca9c4994426a2fae",
+  "raw_rows": 3754,
+  "feature_rows": 36,
+  "frame_receipt_span_seconds_perf_counter": 116.8332936,
+  "requested_duration_seconds": 120.0,
+  "manifest_elapsed_seconds_including_finalization": 126.656,
+  "online_feature_counters": {
+    "intervals_finalized": 95,
+    "feature_rows_published": 36,
+    "warmup_or_na_rows_not_published": 59,
+    "gap_rows_not_published": 0
+  },
+  "adapter_counters": {
+    "messages": 3851,
+    "snapshots": 1,
+    "valid_updates": 3753,
+    "checksum_failures": 0,
+    "malformed_messages": 0,
+    "ignored_messages": 97,
+    "reconnects": 0,
+    "exchange_timestamp_ties": 412,
+    "out_of_order_timestamps": 0,
+    "connection_errors": 0,
+    "subscription_errors": 0
+  },
+  "clock": {
+    "capture_and_features_same_process": true,
+    "perf_counter": {
+      "implementation": "QueryPerformanceCounter()",
+      "resolution": 1e-07,
+      "monotonic": true,
+      "adjustable": false
+    },
+    "perf_counter_empirical": {
+      "successive_call_differences": 100000,
+      "zero_count": 6833,
+      "min_positive_ns": 100,
+      "median_positive_ns": 100,
+      "max_ns": 220700
+    },
+    "perf_counter_nanoseconds": "frame receipt, candidate state processed/CRC validated, feature compute and synchronous in-process feature sink; comparable within this process/session"
+  },
+  "timings": {
+    "frame_received_to_candidate_processed": {
+      "count": 3754,
+      "zero_count": 0,
+      "zero_percent": 0.0,
+      "min_ms": 0.0298,
+      "median_ms": 0.0398,
+      "p90_ms": 0.0662,
+      "p95_ms": 0.10336999999999998,
+      "p99_ms": 0.13384699999999997,
+      "max_ms": 0.2554
+    },
+    "frame_received_to_state_validated": {
+      "count": 3754,
+      "zero_count": 0,
+      "zero_percent": 0.0,
+      "min_ms": 0.0667,
+      "median_ms": 0.0775,
+      "p90_ms": 0.12597000000000003,
+      "p95_ms": 0.165235,
+      "p99_ms": 0.20988799999999994,
+      "max_ms": 0.3911
+    },
+    "source_frame_received_to_feature_ready": {
+      "count": 36,
+      "zero_count": 0,
+      "zero_percent": 0.0,
+      "min_ms": 64.4765,
+      "median_ms": 81.4921,
+      "p90_ms": 95.31694999999999,
+      "p95_ms": 97.2473,
+      "p99_ms": 111.98470499999998,
+      "max_ms": 118.3336
+    },
+    "trigger_frame_received_to_feature_compute": {
+      "count": 36,
+      "zero_count": 0,
+      "zero_percent": 0.0,
+      "min_ms": 44.6428,
+      "median_ms": 61.270399999999995,
+      "p90_ms": 72.77785,
+      "p95_ms": 75.48595,
+      "p99_ms": 85.66976999999999,
+      "max_ms": 90.3989
+    },
+    "trigger_frame_received_to_feature_ready": {
+      "count": 36,
+      "zero_count": 0,
+      "zero_percent": 0.0,
+      "min_ms": 63.5854,
+      "median_ms": 80.62944999999999,
+      "p90_ms": 94.26429999999999,
+      "p95_ms": 96.467,
+      "p99_ms": 110.74796499999997,
+      "max_ms": 116.838
+    },
+    "feature_compute_to_ready": {
+      "count": 36,
+      "zero_count": 0,
+      "zero_percent": 0.0,
+      "min_ms": 18.1781,
+      "median_ms": 19.19925,
+      "p90_ms": 22.91475,
+      "p95_ms": 25.989175000000003,
+      "p99_ms": 26.728675,
+      "max_ms": 26.8846
+    }
+  },
+  "max_absolute_feature_difference": {
+    "v03_pnpc_k3": 0.0,
+    "v03_pnpc_k5": 0.0,
+    "v03_liq_conc_ask": 0.0,
+    "v03_liq_conc_bid": 0.0,
+    "v03_impact_conc_k3": 0.0,
+    "v03_depth_replenish_ask": 4.440892098500626e-16,
+    "v03_depth_replenish_bid": 4.440892098500626e-16
+  },
+  "distinct_feature_trigger_rows": 36,
+  "limitations": [
+    "Kraken feed has no sequence number; CRC and transport counters cannot prove zero silent loss.",
+    "feature_ready is the in-process synchronous sink handoff; Parquet sidecar is persisted at session end.",
+    "No predictive or economic performance was evaluated."
+  ]
+}

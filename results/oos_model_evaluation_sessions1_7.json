@@ -1,0 +1,153 @@
+{
+  "timestamp_eval": "2026-10-20 18:36:56 UTC",
+  "sample_sizes": {
+    "total_sample": 5744,
+    "eval_sample": 4595,
+    "holdout_sample": 1149,
+    "walk_forward_test_obs": 3636
+  },
+  "walk_forward_comparisons": {
+    "Model_C_Navier_V01_vs_Model_B": {
+      "alt_model": "Model_C_Navier_V01",
+      "base_model": "Model_B",
+      "delta_r2_oos": -0.003857275842499286,
+      "ci_95": [
+        -0.018740047581969385,
+        0.0075703359184685895
+      ],
+      "dm_t_stat": -0.6375350494131337,
+      "dm_p_value": 0.52377638730945,
+      "fold_deltas": [
+        -0.0076334423027921705,
+        -0.013432374184974671,
+        0.01146889545482399,
+        -0.014172607312429752
+      ],
+      "folds_positive_ratio": 0.25,
+      "n_eval_obs": 3636,
+      "dm_p_fdr_adjusted": 0.52377638730945
+    },
+    "Model_C_Navier_V01_vs_Model_B_plus": {
+      "alt_model": "Model_C_Navier_V01",
+      "base_model": "Model_B_plus",
+      "delta_r2_oos": -0.011223590748212997,
+      "ci_95": [
+        -0.0234516054440726,
+        0.002464409373895812
+      ],
+      "dm_t_stat": -1.6105050763206457,
+      "dm_p_value": 0.10728763814512546,
+      "fold_deltas": [
+        -0.0331625146024348,
+        -0.00033408409778346027,
+        -0.013873098042850973,
+        -0.0033897588865698935
+      ],
+      "folds_positive_ratio": 0.0,
+      "n_eval_obs": 3636,
+      "dm_p_fdr_adjusted": 0.340364564543944
+    },
+    "Model_D_Navier_V02_vs_Model_B": {
+      "alt_model": "Model_D_Navier_V02",
+      "base_model": "Model_B",
+      "delta_r2_oos": -0.004943503337818678,
+      "ci_95": [
+        -0.013956250530871956,
+        0.0022941692046157514
+      ],
+      "dm_t_stat": -1.2696236001162895,
+      "dm_p_value": 0.20421873872636642,
+      "fold_deltas": [
+        -0.01579102948183042,
+        0.0006090003271750355,
+        0.006540141527097809,
+        -0.016881733972463175
+      ],
+      "folds_positive_ratio": 0.5,
+      "n_eval_obs": 3636,
+      "dm_p_fdr_adjusted": 0.340364564543944
+    },
+    "Model_D_Navier_V02_vs_Model_B_plus": {
+      "alt_model": "Model_D_Navier_V02",
+      "base_model": "Model_B_plus",
+      "delta_r2_oos": -0.012317788991946799,
+      "ci_95": [
+        -0.025843727787911313,
+        0.002240680485521092
+      ],
+      "dm_t_stat": -1.4800254786837468,
+      "dm_p_value": 0.13886644728304204,
+      "fold_deltas": [
+        -0.04152677975000918,
+        0.013525810128884874,
+        -0.018928205556633992,
+        -0.00607008167048706
+      ],
+      "folds_positive_ratio": 0.25,
+      "n_eval_obs": 3636,
+      "dm_p_fdr_adjusted": 0.340364564543944
+    },
+    "Model_B_plus_vs_Model_B": {
+      "alt_model": "Model_B_plus",
+      "base_model": "Model_B",
+      "delta_r2_oos": 0.00728455603004996,
+      "ci_95": [
+        -0.010514977883091524,
+        0.021147095017413155
+      ],
+      "dm_t_stat": 0.7914115841499748,
+      "dm_p_value": 0.428703852268125,
+      "fold_deltas": [
+        0.02470963855039421,
+        -0.013093915618205498,
+        0.02499523219088695,
+        -0.01074642065095932
+      ],
+      "folds_positive_ratio": 0.5,
+      "n_eval_obs": 3636,
+      "dm_p_fdr_adjusted": 0.52377638730945
+    }
+  },
+  "holdout_comparisons": {
+    "Model_C_Navier_V01_vs_Model_B": {
+      "delta_r2_oos_holdout": -0.0028025691233590777,
+      "dm_t_stat": -0.3301375526417885,
+      "dm_p_value": 0.7412960295156596,
+      "n_holdout_obs": 1149
+    },
+    "Model_C_Navier_V01_vs_Model_B_plus": {
+      "delta_r2_oos_holdout": -0.006618819430006528,
+      "dm_t_stat": -0.3371551735723581,
+      "dm_p_value": 0.7359999272001925,
+      "n_holdout_obs": 1149
+    },
+    "Model_D_Navier_V02_vs_Model_B": {
+      "delta_r2_oos_holdout": -0.001083902247612123,
+      "dm_t_stat": -0.16760564426365587,
+      "dm_p_value": 0.8668935305399508,
+      "n_holdout_obs": 1149
+    },
+    "Model_D_Navier_V02_vs_Model_B_plus": {
+      "delta_r2_oos_holdout": -0.004893612021563021,
+      "dm_t_stat": -0.24094586720674704,
+      "dm_p_value": 0.8095970722462196,
+      "n_holdout_obs": 1149
+    },
+    "Model_B_plus_vs_Model_B": {
+      "delta_r2_oos_holdout": 0.0037911573209097327,
+      "dm_t_stat": 0.16879213248698569,
+      "dm_p_value": 0.8659601468984923,
+      "n_holdout_obs": 1149
+    }
+  },
+  "verdict": {
+    "result": "FRACASO (HIP\u00d3TESIS RECHAZADA O ABSORBIDA POR MODELO BASE B/B+)",
+    "criteria_status": {
+      "positive_delta_r2_eval": false,
+      "dm_sig_fdr_eval": false,
+      "folds_consistency_ge_70pct": false,
+      "positive_delta_r2_holdout": false,
+      "dm_sig_holdout": false
+    }
+  }
+}

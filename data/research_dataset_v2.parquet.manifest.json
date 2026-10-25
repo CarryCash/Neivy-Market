@@ -1,0 +1,163 @@
+{
+  "project": "NAVIER",
+  "version": "2.0.0-FROZEN",
+  "stage": "research_dataset_phase_4",
+  "symbol": "BTC/USD",
+  "exchange": "Kraken Spot",
+  "horizon_seconds": 10,
+  "input_sessions": [
+    {
+      "session_file": "session_10_btc_usd_l2.parquet",
+      "input_sha256": "8eca04de6362a16b035bb5d2929afa01b442b4431ad10307c762d9d0a7e081a0",
+      "raw_rows": 44073,
+      "resampled_rows": 898,
+      "post_warmup_rows": 838,
+      "output_1s_file": "session_10_btc_usd_l2_1s.parquet",
+      "output_1s_sha256": "3ca14a5ce34d11b4b7dd230e81896dc8dae1bfbef72cd33a1856c9e2853ae39d"
+    },
+    {
+      "session_file": "session_11_btc_usd_l2.parquet",
+      "input_sha256": "d9b42553ec61356c165e5d25140d8f426c3cad8dbc5a431bff822564ca6be2ac",
+      "raw_rows": 44694,
+      "resampled_rows": 898,
+      "post_warmup_rows": 838,
+      "output_1s_file": "session_11_btc_usd_l2_1s.parquet",
+      "output_1s_sha256": "38c1d43882382d6ec978c1da622b01955c55664fdac52ea988a7d9df423c2e56"
+    },
+    {
+      "session_file": "session_1_btc_usd_l2.parquet",
+      "input_sha256": "066fb869486a64fabd5b8a2335585dbeb045f8360465d57188c8dfd9a3730288",
+      "raw_rows": 83129,
+      "resampled_rows": 898,
+      "post_warmup_rows": 838,
+      "output_1s_file": "session_1_btc_usd_l2_1s.parquet",
+      "output_1s_sha256": "e19f1cbf4736adc282801e4af4acd78a37027be902ea1618507c07c68ed1f22f"
+    },
+    {
+      "session_file": "session_2_btc_usd_l2.parquet",
+      "input_sha256": "a1732069e16b7788c6d70c83df75f8cb2910bde037965dc82b0a0728d8cf5f3e",
+      "raw_rows": 76818,
+      "resampled_rows": 897,
+      "post_warmup_rows": 837,
+      "output_1s_file": "session_2_btc_usd_l2_1s.parquet",
+      "output_1s_sha256": "cbf175e5b7cf8c7e2e69e8457b5aae816948a3f04e50c7505c0072e765c5bea1"
+    },
+    {
+      "session_file": "session_3_btc_usd_l2.parquet",
+      "input_sha256": "fe13243cc893a73414de0df3f1e25a303ea9ad47d1cef8cb8e6cbac3ec504720",
+      "raw_rows": 86921,
+      "resampled_rows": 898,
+      "post_warmup_rows": 838,
+      "output_1s_file": "session_3_btc_usd_l2_1s.parquet",
+      "output_1s_sha256": "b14faf503e3d9ef562d01136c8ae31fe906bc55201d72cdc95858c14b226de5f"
+    },
+    {
+      "session_file": "session_4_btc_usd_l2.parquet",
+      "input_sha256": "d97fdbda8d81bc96ff256ea33dbc32a55e5e134f710eab4345c30fe4544c3a4b",
+      "raw_rows": 71599,
+      "resampled_rows": 899,
+      "post_warmup_rows": 839,
+      "output_1s_file": "session_4_btc_usd_l2_1s.parquet",
+      "output_1s_sha256": "b17ba5adea39a46cc5096443bc247a40162e5b0823ada3d10b941905f4714b62"
+    },
+    {
+      "session_file": "session_5_btc_usd_l2.parquet",
+      "input_sha256": "7a6e229397d7cd13254325a393f1351aa1860ae93250af9ed3899a48a820f6c7",
+      "raw_rows": 39061,
+      "resampled_rows": 898,
+      "post_warmup_rows": 838,
+      "output_1s_file": "session_5_btc_usd_l2_1s.parquet",
+      "output_1s_sha256": "4ec8a1122851737568838ae5b5db236cee74acf0706c29d85adc6a7daeddb06a"
+    },
+    {
+      "session_file": "session_6_btc_usd_l2.parquet",
+      "input_sha256": "66180bd98657d5f9a0837b0d003519d26b72c094b6808860154d83a58738bdbd",
+      "raw_rows": 42752,
+      "resampled_rows": 898,
+      "post_warmup_rows": 838,
+      "output_1s_file": "session_6_btc_usd_l2_1s.parquet",
+      "output_1s_sha256": "66b90a2e30cb0abf10604be7b9a8d4f6102162a123153946bf01af110416a153"
+    },
+    {
+      "session_file": "session_7_btc_usd_l2.parquet",
+      "input_sha256": "c2bcbfd93bb5641994dd7f970efff13939d9915cc47faa9cd063027c9bbbc034",
+      "raw_rows": 44883,
+      "resampled_rows": 898,
+      "post_warmup_rows": 838,
+      "output_1s_file": "session_7_btc_usd_l2_1s.parquet",
+      "output_1s_sha256": "27bb2257f4910af5d1b08d0b2491223166ced4876422b5598025b3911ce39d0e"
+    },
+    {
+      "session_file": "session_8_btc_usd_l2.parquet",
+      "input_sha256": "6de675920f053cbfe9b3a2bec154bd08e35a677d893bb136176f7091a783c6b7",
+      "raw_rows": 37867,
+      "resampled_rows": 899,
+      "post_warmup_rows": 839,
+      "output_1s_file": "session_8_btc_usd_l2_1s.parquet",
+      "output_1s_sha256": "dc0b7b8911b73a7561755aeabdc63a06516fa526a53fd432761e61fa533798f6"
+    },
+    {
+      "session_file": "session_9_btc_usd_l2.parquet",
+      "input_sha256": "71ad457c31e6a579e56da1aa5727b897b924baa3aa486ceebf8e5f0c3c4e932e",
+      "raw_rows": 36368,
+      "resampled_rows": 898,
+      "post_warmup_rows": 838,
+      "output_1s_file": "session_9_btc_usd_l2_1s.parquet",
+      "output_1s_sha256": "3df0b69cad7d3cbf25924aa318dd7aa7cc3694ef8d71ff40e13cbc027ae80d58"
+    }
+  ],
+  "total_consolidated_rows": 9219,
+  "clean_complete_rows": 8989,
+  "clean_ratio": 0.9751,
+  "output_file": "research_dataset_v2.parquet",
+  "output_sha256": "763c9c2532c1d94aa1634e00611fd360263e503e9f08dbed20542b7f5099c91e",
+  "features_available": {
+    "model_a": [
+      "spread_bps",
+      "depth_log",
+      "vol60_bps"
+    ],
+    "model_b": [
+      "spread_bps",
+      "depth_log",
+      "vol60_bps",
+      "imb_full",
+      "imb_top1",
+      "ofi_5",
+      "ret_1",
+      "ret_5",
+      "ret_30"
+    ],
+    "model_bplus": [
+      "spread_bps",
+      "depth_log",
+      "vol60_bps",
+      "imb_full",
+      "imb_top1",
+      "ofi_5",
+      "ret_1",
+      "ret_5",
+      "ret_30",
+      "imb_full_lag2",
+      "imb_full_lag5",
+      "imb_full_lag8"
+    ],
+    "model_c_navier_v01": [
+      "u",
+      "dI_dt",
+      "grad_bid",
+      "grad_ask",
+      "curv_bid",
+      "curv_ask",
+      "re_log"
+    ],
+    "model_d_navier_v02": [
+      "v02_l_vwap_bps",
+      "v02_grad_bid_norm",
+      "v02_grad_ask_norm",
+      "v02_re_log_reg"
+    ],
+    "target": "y",
+    "target_bps": "y_bps"
+  }
+}

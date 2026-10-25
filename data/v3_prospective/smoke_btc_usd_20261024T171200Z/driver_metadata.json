@@ -1,0 +1,25 @@
+{
+  "run_status": "PROCESS_EXITED",
+  "started_at_utc": "2026-10-24T17:17:32.629758+00:00",
+  "ended_at_utc": "2026-10-24T17:19:24.004577+00:00",
+  "total_wall_seconds": 111.375,
+  "max_stream_seconds": 110,
+  "external_timeout_seconds": 125,
+  "command": [
+    "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+    "C:\\Users\\USER\\Documents\\ChatGPT\\Navier Stokes Trading\\scripts\\capture_kraken_l2.py",
+    "--symbol",
+    "BTC/USD",
+    "--depth",
+    "10",
+    "--seconds",
+    "110",
+    "--batch-size",
+    "2000",
+    "--output",
+    "C:\\Users\\USER\\Documents\\ChatGPT\\Navier Stokes Trading\\data\\v3_prospective\\smoke_btc_usd_20261024T171200Z\\btc_usd_l2.parquet"
+  ],
+  "exit_code": 0,
+  "output_sha256": "b6123f33a464751fdceeca1a5f78887bc28f2d74e3ab4205cb94b6c1ddb80b76",
+  "partial_files": []
+}
